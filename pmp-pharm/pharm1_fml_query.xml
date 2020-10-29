@@ -1,0 +1,56 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+   <soap:Header>
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                          ID="Assertion_3efbfc7917a1d3ec6e33ec70f410393d655980bb"
+                          IssueInstant="2020-08-28T09:01:06.421Z"
+                          Version="2.0">
+            <saml2:AttributeStatement>
+               <saml2:Attribute Name="urn:oasis:names:tc:xacml:2.0:subject:role"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                  <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                        xsi:type="xsd:anyType">
+                     <hl7v3:Role xmlns:hl7v3="urn:hl7-org:v3"
+                                 code="PAT"
+                                 codeSystem="2.16.756.5.30.1.127.3.10.6"
+                                 displayName="Patient"/>
+                  </saml2:AttributeValue>
+               </saml2:Attribute>
+               <saml2:Attribute Name="urn:oasis:names:tc:xacml:2.0:resource:resource-id"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                  <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:string">12345678^^^&amp;2.999.756.42.2&amp;ISO</saml2:AttributeValue>
+               </saml2:Attribute>
+            </saml2:AttributeStatement>
+         </saml2:Assertion>
+      </wsse:Security>
+      <Action xmlns="http://www.w3.org/2005/08/addressing" soap:mustUnderstand="true">urn:ihe:pharm:cmpd:2010:QueryPharmacyDocuments</Action>
+      <MessageID xmlns="http://www.w3.org/2005/08/addressing">urn:uuid:54cc77ef-6650-4d14-bc8b-6d81f93a2922</MessageID>
+      <To xmlns="http://www.w3.org/2005/08/addressing">https://sct-form.hcuge.ch/sharedtreatmentplan/services/cmpd/pharm1</To>
+   </soap:Header>
+   <soap:Body>
+      <ns4:AdhocQueryRequest xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+                             xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"
+                             xmlns:ns4="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0"
+                             xmlns:ns5="urn:ihe:iti:xds-b:2007"
+                             xmlns:ns6="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0">
+         <ns4:ResponseOption returnComposedObjects="true" returnType="LeafClass"/>
+         <ns2:AdhocQuery id="urn:uuid:80ebbd83-53c1-4453-9860-349585962af6">
+            <ns2:Slot name="$XDSDocumentEntryPatientId">
+               <ns2:ValueList>
+                  <ns2:Value>'12345678^^^&amp;2.999.756.42.2&amp;ISO'</ns2:Value>
+               </ns2:ValueList>
+            </ns2:Slot>
+            <ns2:Slot name="$XDSDocumentEntryStatus">
+               <ns2:ValueList>
+                  <ns2:Value>('urn:oasis:names:tc:ebxml-regrep:StatusType:Approved')</ns2:Value>
+               </ns2:ValueList>
+            </ns2:Slot>
+            <ns2:Slot name="$XDSDocumentEntryType">
+               <ns2:ValueList>
+                  <ns2:Value>('urn:uuid:34268e47-fdf5-41a6-ba33-82133c465248')</ns2:Value>
+               </ns2:ValueList>
+            </ns2:Slot>
+         </ns2:AdhocQuery>
+      </ns4:AdhocQueryRequest>
+   </soap:Body>
+</soap:Envelope>

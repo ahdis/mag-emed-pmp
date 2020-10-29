@@ -1,0 +1,15 @@
+### Searches for Medication Card list from pmp
+
+### @host = http://localhost:9090/mag-pmp
+@host = https://test.ahdis.ch/mag-pmp
+
+### PHARM-5 Find Document References from PMP
+GET {{host}}/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.999.756.42.2|12345678 HTTP/1.1
+Accept: application/fhir+json
+Content-Type: application/fhir+json
+
+### ITI-68 Retrieve Document
+GET {{host}}/camel/xdsretrieve?uniqueId=51570022-9b6a-474b-927b-e6a1b193ce16&repositoryUniqueId=2.999.756.42.1
+
+
+
