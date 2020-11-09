@@ -7,7 +7,7 @@ Test/demo cases for using the Mobile Access Gateway with the eMedication Service
 
 1. Get Access Token
 
-[ ] To be clarified
+Same as in EPR Context (needs to be defined)
 
 2. Get Patient ID
 
@@ -27,12 +27,13 @@ https://test.ahdis.ch/mag-pmp/fhir/camel/xdsretrieve?uniqueId=51570022-9b6a-474b
 
 5. Convert CDA to FHIR
 
-
-OAuth or XUA, needs to be clarified by spec/project
-
-
-IHE MHD RetrieveDoc Query [ITI-68] (https GET)
 FHIR API $transform Operation
+
+```
+POST https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationListDocumentToBundle
+Accept: application/fhir+json;fhirVersion=4.0
+Content-Type: application/fhir+xml;fhirVersion=4.0
+```
 
 
 ## Updating the medication

@@ -11,5 +11,9 @@ Content-Type: application/fhir+json
 ### ITI-68 Retrieve Document
 GET {{host}}/camel/xdsretrieve?uniqueId=51570022-9b6a-474b-927b-e6a1b193ce16&repositoryUniqueId=2.999.756.42.1
 
+### $transform operation 
+POST https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationListDocumentToBundle
+Accept: application/fhir+json;fhirVersion=4.0
+Content-Type: application/fhir+xml;fhirVersion=4.0
 
-
+< ../pmp-pharm/cda-response-ms.xml
