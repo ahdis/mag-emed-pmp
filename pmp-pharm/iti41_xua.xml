@@ -1,0 +1,230 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+   <soap:Header>
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                          ID="Assertion_3efbfc7917a1d3ec6e33ec70f410393d655980bb"
+                          IssueInstant="2020-08-28T09:01:06.421Z"
+                          Version="2.0">
+            <saml2:AttributeStatement>
+               <saml2:Attribute Name="urn:oasis:names:tc:xacml:2.0:subject:role"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                  <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                        xsi:type="xsd:anyType">
+                     <hl7v3:Role xmlns:hl7v3="urn:hl7-org:v3"
+                                 code="PAT"
+                                 codeSystem="2.16.756.5.30.1.127.3.10.6"
+                                 displayName="Patient"/>
+                  </saml2:AttributeValue>
+               </saml2:Attribute>
+               <saml2:Attribute Name="urn:oasis:names:tc:xacml:2.0:resource:resource-id"
+                                NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                  <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:string">678^^^&amp;2.999.756.42.2&amp;ISO</saml2:AttributeValue>
+               </saml2:Attribute>
+            </saml2:AttributeStatement>
+         </saml2:Assertion>
+      </wsse:Security>
+      <Action xmlns="http://www.w3.org/2005/08/addressing" soap:mustUnderstand="true">urn:ihe:iti:2007:ProvideAndRegisterDocumentSet-b</Action>
+      <MessageID xmlns="http://www.w3.org/2005/08/addressing">urn:uuid:2588d5f5-16f0-4f21-a5a5-c232f75d1735</MessageID>
+      <To xmlns="http://www.w3.org/2005/08/addressing">https://sct-form.hcuge.ch/sharedtreatmentplan/services/xds/iti41</To>
+      <ReplyTo xmlns="http://www.w3.org/2005/08/addressing">
+         <Address xmlns="">http://www.w3.org/2005/08/addressing/anonymous</Address>
+      </ReplyTo>
+   </soap:Header>
+   <soap:Body>
+      <ns4:ProvideAndRegisterDocumentSetRequest xmlns:ns2="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0"
+                                                xmlns:ns3="urn:oasis:names:tc:ebxml-regrep:xsd:rs:3.0"
+                                                xmlns:ns4="urn:ihe:iti:xds-b:2007"
+                                                xmlns:ns5="urn:oasis:names:tc:ebxml-regrep:xsd:lcm:3.0"
+                                                xmlns:ns6="urn:oasis:names:tc:ebxml-regrep:xsd:query:3.0">
+         <ns5:SubmitObjectsRequest>
+            <ns3:RequestSlotList/>
+            <ns2:RegistryObjectList>
+               <ns2:ExtrinsicObject id="d4e70396-3836-c278-7faf-8b6cbe20baf2"
+                                    lid="d4e70396-3836-c278-7faf-8b6cbe20baf2"
+                                    mimeType="text/xml"
+                                    objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1">
+                  <ns2:Slot name="creationTime">
+                     <ns2:ValueList>
+                        <ns2:Value>20201111161616</ns2:Value>
+                     </ns2:ValueList>
+                  </ns2:Slot>
+                  <ns2:Slot name="languageCode">
+                     <ns2:ValueList>
+                        <ns2:Value>fr-CH</ns2:Value>
+                     </ns2:ValueList>
+                  </ns2:Slot>
+                  <ns2:Slot name="sourcePatientId">
+                     <ns2:ValueList>
+                        <ns2:Value>678^^^&amp;2.999.756.42.2&amp;ISO</ns2:Value>
+                     </ns2:ValueList>
+                  </ns2:Slot>
+                  <ns2:Name>
+                     <ns2:LocalizedString charset="UTF-8" value="Test Upload APPC" xml:lang="fr-CH"/>
+                  </ns2:Name>
+                  <ns2:Classification classificationScheme="urn:uuid:41a5887f-8865-4c09-adf7-e362475b143a"
+                                      classifiedObject="d4e70396-3836-c278-7faf-8b6cbe20baf2"
+                                      id="urn:uuid:73cb3489-0146-4f53-874a-54b553ce1e11"
+                                      nodeRepresentation="405624007">
+                     <ns2:Slot name="codingScheme">
+                        <ns2:ValueList>
+                           <ns2:Value>2.16.840.1.113883.6.96</ns2:Value>
+                        </ns2:ValueList>
+                     </ns2:Slot>
+                     <ns2:Name>
+                        <ns2:LocalizedString charset="UTF-8" value="Administrative documentation" xml:lang="en"/>
+                     </ns2:Name>
+                  </ns2:Classification>
+                  <ns2:Classification classificationScheme="urn:uuid:a09d5840-386c-46f2-b5ad-9c3699a4309d"
+                                      classifiedObject="d4e70396-3836-c278-7faf-8b6cbe20baf2"
+                                      id="urn:uuid:1782ea6f-7f45-4b46-852b-d0ee0acf53e6"
+                                      nodeRepresentation="urn:ihe:iti:xds:2017:mimeTypeSufficient">
+                     <ns2:Slot name="codingScheme">
+                        <ns2:ValueList>
+                           <ns2:Value>1.3.6.1.4.1.19376.1.2.3</ns2:Value>
+                        </ns2:ValueList>
+                     </ns2:Slot>
+                     <ns2:Name>
+                        <ns2:LocalizedString charset="UTF-8" value="MimeType sufficient" xml:lang="en"/>
+                     </ns2:Name>
+                  </ns2:Classification>
+                  <ns2:Classification classificationScheme="urn:uuid:f33fb8ac-18af-42cc-ae0e-ed0b0bdb91e1"
+                                      classifiedObject="d4e70396-3836-c278-7faf-8b6cbe20baf2"
+                                      id="urn:uuid:5585a508-5ae4-4a1b-8a65-11162f0a47cc"
+                                      nodeRepresentation="394747008">
+                     <ns2:Slot name="codingScheme">
+                        <ns2:ValueList>
+                           <ns2:Value>2.16.840.1.113883.6.96</ns2:Value>
+                        </ns2:ValueList>
+                     </ns2:Slot>
+                  </ns2:Classification>
+                  <ns2:Classification classificationScheme="urn:uuid:cccf5598-8b07-4b77-a05e-ae952c785ead"
+                                      classifiedObject="d4e70396-3836-c278-7faf-8b6cbe20baf2"
+                                      id="urn:uuid:5a0068a1-ea1d-489f-b8f3-f45a0088e10a"
+                                      nodeRepresentation="394658006">
+                     <ns2:Slot name="codingScheme">
+                        <ns2:ValueList>
+                           <ns2:Value>2.16.840.1.113883.6.96</ns2:Value>
+                        </ns2:ValueList>
+                     </ns2:Slot>
+                  </ns2:Classification>
+                  <ns2:Classification classificationScheme="urn:uuid:f0306f51-975f-434e-a61c-c59651d33983"
+                                      classifiedObject="d4e70396-3836-c278-7faf-8b6cbe20baf2"
+                                      id="urn:uuid:a061243f-3632-4075-ac52-5f5167c74679"
+                                      nodeRepresentation="419891008">
+                     <ns2:Slot name="codingScheme">
+                        <ns2:ValueList>
+                           <ns2:Value>2.16.840.1.113883.6.96</ns2:Value>
+                        </ns2:ValueList>
+                     </ns2:Slot>
+                     <ns2:Name>
+                        <ns2:LocalizedString charset="UTF-8" value="Record artifact" xml:lang="en"/>
+                     </ns2:Name>
+                  </ns2:Classification>
+                  <ns2:Classification classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                                      classifiedObject="d4e70396-3836-c278-7faf-8b6cbe20baf2"
+                                      id="urn:uuid:38972d06-9290-4a88-88f5-0caa6f3d13be"
+                                      nodeRepresentation="17621005">
+                     <ns2:Slot name="codingScheme">
+                        <ns2:ValueList>
+                           <ns2:Value>2.16.840.1.113883.6.96</ns2:Value>
+                        </ns2:ValueList>
+                     </ns2:Slot>
+                  </ns2:Classification>
+                  <ns2:ExternalIdentifier id="urn:uuid:d90c7953-e487-41e9-8c6a-0bf417500a8f"
+                                          identificationScheme="urn:uuid:58a6f841-87b3-4a3e-92fd-a8ffeff98427"
+                                          registryObject="d4e70396-3836-c278-7faf-8b6cbe20baf2"
+                                          value="678^^^&amp;2.999.756.42.2&amp;ISO">
+                     <ns2:Name>
+                        <ns2:LocalizedString value="XDSDocumentEntry.patientId"/>
+                     </ns2:Name>
+                  </ns2:ExternalIdentifier>
+                  <ns2:ExternalIdentifier id="urn:uuid:1339b322-9a02-49ba-92e8-6048bf4d3285"
+                                          identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                                          registryObject="d4e70396-3836-c278-7faf-8b6cbe20baf2"
+                                          value="2b18fc69-c7c9-3d87-8050-749341df450d">
+                     <ns2:Name>
+                        <ns2:LocalizedString value="XDSDocumentEntry.uniqueId"/>
+                     </ns2:Name>
+                  </ns2:ExternalIdentifier>
+               </ns2:ExtrinsicObject>
+               <ns2:RegistryPackage id="1ceb6339-42f3-4666-a98f-c275ff68d993">
+                  <ns2:Slot name="submissionTime">
+                     <ns2:ValueList>
+                        <ns2:Value>20201111161616</ns2:Value>
+                     </ns2:ValueList>
+                  </ns2:Slot>
+                  <ns2:Classification classificationScheme="urn:uuid:a7058bb9-b4e4-4307-ba5b-e3f0ab85e12d"
+                                      classifiedObject="1ceb6339-42f3-4666-a98f-c275ff68d993"
+                                      id="urn:uuid:2117194f-6a99-404d-a8b8-1efdb127a07d"
+                                      nodeRepresentation="">
+                     <ns2:Slot name="authorPerson">
+                        <ns2:ValueList>
+                           <ns2:Value>2.999.1.2.3.1375^Welby^Marcus^^MD^Dr</ns2:Value>
+                        </ns2:ValueList>
+                     </ns2:Slot>
+                     <ns2:Slot name="authorRole">
+                        <ns2:ValueList>
+                           <ns2:Value>PAT^^^&amp;2.16.756.5.30.1.127.3.10.6&amp;ISO</ns2:Value>
+                        </ns2:ValueList>
+                     </ns2:Slot>
+                  </ns2:Classification>
+                  <ns2:Classification classificationScheme="urn:uuid:aa543740-bdda-424e-8c96-df4873be8500"
+                                      classifiedObject="1ceb6339-42f3-4666-a98f-c275ff68d993"
+                                      id="urn:uuid:5ed30609-3d05-413a-9ee7-fe1c61757f1e"
+                                      nodeRepresentation="71388002">
+                     <ns2:Slot name="codingScheme">
+                        <ns2:ValueList>
+                           <ns2:Value>2.16.840.1.113883.6.96</ns2:Value>
+                        </ns2:ValueList>
+                     </ns2:Slot>
+                     <ns2:Name>
+                        <ns2:LocalizedString charset="UTF-8" value="Procedure (procedure)" xml:lang="en-US"/>
+                     </ns2:Name>
+                  </ns2:Classification>
+                  <ns2:ExternalIdentifier id="urn:uuid:ffd1a681-e132-407d-986e-a24d72a39530"
+                                          identificationScheme="urn:uuid:6b5aea1a-874d-4603-a4bc-96a0a7b38446"
+                                          registryObject="1ceb6339-42f3-4666-a98f-c275ff68d993"
+                                          value="678^^^&amp;2.999.756.42.2&amp;ISO">
+                     <ns2:Name>
+                        <ns2:LocalizedString value="XDSSubmissionSet.patientId"/>
+                     </ns2:Name>
+                  </ns2:ExternalIdentifier>
+                  <ns2:ExternalIdentifier id="urn:uuid:0d8c0488-b35c-45b9-b6b9-a778582b52ae"
+                                          identificationScheme="urn:uuid:96fdda7c-d067-4183-912e-bf5ee74998a8"
+                                          registryObject="1ceb6339-42f3-4666-a98f-c275ff68d993"
+                                          value="2.999.756.2.1.7624.9971321">
+                     <ns2:Name>
+                        <ns2:LocalizedString value="XDSSubmissionSet.uniqueId"/>
+                     </ns2:Name>
+                  </ns2:ExternalIdentifier>
+                  <ns2:ExternalIdentifier id="urn:uuid:0292e017-1bb5-4d1b-a5a9-28881ff9858a"
+                                          identificationScheme="urn:uuid:554ac39e-e3fe-47fe-b233-965d2a147832"
+                                          registryObject="1ceb6339-42f3-4666-a98f-c275ff68d993"
+                                          value="2.999.756.123.1">
+                     <ns2:Name>
+                        <ns2:LocalizedString value="XDSSubmissionSet.sourceId"/>
+                     </ns2:Name>
+                  </ns2:ExternalIdentifier>
+               </ns2:RegistryPackage>
+               <ns2:Classification classificationNode="urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd"
+                                   classifiedObject="1ceb6339-42f3-4666-a98f-c275ff68d993"
+                                   id="urn:uuid:d630f09c-26ed-4e99-8809-d4caef52eb37"/>
+               <ns2:Association associationType="urn:oasis:names:tc:ebxml-regrep:AssociationType:HasMember"
+                                id="a9891448-4947-4239-9e86-7ab8a069d70a"
+                                sourceObject="1ceb6339-42f3-4666-a98f-c275ff68d993"
+                                targetObject="d4e70396-3836-c278-7faf-8b6cbe20baf2">
+                  <ns2:Slot name="SubmissionSetStatus">
+                     <ns2:ValueList>
+                        <ns2:Value>Original</ns2:Value>
+                     </ns2:ValueList>
+                  </ns2:Slot>
+               </ns2:Association>
+            </ns2:RegistryObjectList>
+         </ns5:SubmitObjectsRequest>
+         <ns4:Document id="d4e70396-3836-c278-7faf-8b6cbe20baf2">
+            <xop:Include xmlns:xop="http://www.w3.org/2004/08/xop/include"
+                         href="cid:344ad331-b145-4fe8-8b31-947013153f00-2@urn%3Aihe%3Aiti%3Axds-b%3A2007"/>
+         </ns4:Document>
+      </ns4:ProvideAndRegisterDocumentSetRequest>
+   </soap:Body>
+</soap:Envelope>
