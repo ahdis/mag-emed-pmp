@@ -36,7 +36,7 @@
 	<templateId root="2.16.756.5.30.1.1.10.1.7" />
 
 	<!-- id of this Medication Treatment Plan document -->
-	<id root="CAE9DA00-50C9-463F-AD4A-5B87BAED5A98" />
+	<id root="6DD91B61-2648-4B40-A62F-745983EFD37D" />
 
 	<!-- IHE PHRAM MTP defines the document code -->
 	<code code="77603-9" codeSystem="2.16.840.1.113883.6.1"
@@ -52,7 +52,7 @@
 	<languageCode code="de-CH" />
 
 	<!-- Document setId and versionNumber according to CDA-CH v2.0. -->
-	<setId root="CAE9DA00-50C9-463F-AD4A-5B87BAED5A98" />
+	<setId root="6DD91B61-2648-4B40-A62F-745983EFD37D" />
 	<versionNumber value="1" />
 
 	<recordTarget>
@@ -211,7 +211,7 @@
 							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1" />
 
 							<!-- ID of mtp item, PCC TF2 6.3.4.16.6 -->
-							<id root="D11EC68A-86BF-44E1-A58D-3FB5BCF67D75" />
+							<id root="6DD91B61-2648-4B40-A62F-745983EFD37D" />
 
 							<text>
 								<reference value="#mtp.1" />
