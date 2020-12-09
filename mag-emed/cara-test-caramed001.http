@@ -38,6 +38,6 @@ Authorization: IHE-SAML PHNhbWwyOkFzc2VydGlvbiB4bWxuczpzYW1sMj0idXJuOm9hc2lzOm5h
 ### Transform Medication List document
 POST https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationListDocumentToBundle
 Accept: application/fhir+json;fhirVersion=4.0
-Content-Type: application/fhir+xml;fhirVersion=4.0
+Content-Type: text/xml
 
 < ./CARAMED001.1-1-MTP-HPC.xml
