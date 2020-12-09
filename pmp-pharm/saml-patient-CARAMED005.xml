@@ -6,7 +6,7 @@
             </saml2:AttributeValue>
         </saml2:Attribute>
         <saml2:Attribute Name="urn:oasis:names:tc:xacml:2.0:resource:resource-id" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:string">CARAEMED005^^^&amp;2.999.756.42.2&amp;ISO</saml2:AttributeValue>
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:string">CARAMED005^^^&amp;2.999.756.42.2&amp;ISO</saml2:AttributeValue>
         </saml2:Attribute>
     </saml2:AttributeStatement>
 </saml2:Assertion>
