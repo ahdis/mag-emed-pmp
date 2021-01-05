@@ -79,9 +79,11 @@
             }
           ]
         },
-        "author": {
+        "author": [ 
+          {
           "reference": "#1"
-        },
+          }
+        ],
         "subject": {
           "reference": "http://test.ahdis.ch/fhir/Patient/2.999.756.42.2-CARAMED002"
         },
