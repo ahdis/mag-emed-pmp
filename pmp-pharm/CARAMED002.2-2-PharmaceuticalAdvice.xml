@@ -207,8 +207,8 @@
 
 							<id root="8ED02D0A-2971-11E6-B67B-9E71128CAE77" />
 
-							<!-- medication will be canceled -->
-							<code code="CANCEL" codeSystem="1.3.6.1.4.1.19376.1.9.2.1"
+							<!-- medication will be canceled tmp fix-->
+							<code code="SUSPEND" codeSystem="1.3.6.1.4.1.19376.1.9.2.1"
 								codeSystemName="IHE Pharmaceutical Advice Status List" />
 							<text>
 								<reference value="#padv.1" />
