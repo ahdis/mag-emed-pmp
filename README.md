@@ -242,7 +242,7 @@ The following codes are used in the PMP for the CDA documents:
 |     Medication Card (PMLC)                  |     422735006     (Summary clinical document)    |     721912009     (Medication summary document)                     |     urn:ch:cda-ch-emed:medication-card:2018    |
 
 
-See [CARAMED001.1-1-MedicationTreatmenPlan.mhd.json](pmp-pharm/CARAMED001.1-1-MedicationTreatmenPlan.mhd) for a Provide Document Bundle message example.
+See [CARAMED001.1-1-MedicationTreatmenPlan.mhd.json](pmp-pharm/CARAMED001.1-1-MedicationTreatmenPlan.mhd.json) for a Provide Document Bundle message example.
 
 The Provide Document Bundle message is sent to the base URL as defined in FHIR. See http://hl7.org/fhir/R4/http.html for the definition of “HTTP” access methods and “base”.
 
