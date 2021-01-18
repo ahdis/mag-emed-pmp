@@ -1,3 +1,10 @@
+###
+https://sct-form.hcuge.ch/sharedtreatmentplan/mhd/debug
+
+###
+https://sct-form.hcuge.ch/sharedtreatmentplan/mhd/logs
+
+
 ### PHARM-1 Query from Quentin specifying ondemand
 POST https://sct-form.hcuge.ch/sharedtreatmentplan/services/cmpd/pharm1 HTTP/1.1
 Content-Type: application/soap+xml
