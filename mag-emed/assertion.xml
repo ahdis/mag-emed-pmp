@@ -1,0 +1,142 @@
+<saml2:Assertion ID="Assertion_a08a8b14e03588d84df314fda9e016be9e1f750e" IssueInstant="2020-12-03T08:53:09.864Z" Version="2.0" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<saml2:Issuer>http://fed.hin.ch/saml/2.0/idp/</saml2:Issuer>
+	<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+		<ds:SignedInfo>
+			<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+			<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+			<ds:Reference URI="#Assertion_a08a8b14e03588d84df314fda9e016be9e1f750e">
+				<ds:Transforms>
+					<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+					<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+						<ec:InclusiveNamespaces PrefixList="xs" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+					</ds:Transform>
+				</ds:Transforms>
+				<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+				<ds:DigestValue>Oo4RrJrfP3fuqw+rRV5Ct6uSfEpb2UlSypUDNYfpeyc=</ds:DigestValue>
+			</ds:Reference>
+		</ds:SignedInfo>
+		<ds:SignatureValue>JO25F5BZSNDtxfymQmgYOnWzVGiJBI5taFqwv411O/ESb5xmOhpQrRbOj/gcqgwVPfcEeIyMKnVFSrg6qxiY2Ce3ASnyD4jBffEFs8CTfhSAWL398YY+7GrbqOj1ArDLvC+FxFmPVrkkHgcH9sxqsnD+r65OKEANQcVIuFPXNFMKDm4t41zNrhLklyFCsbL0/ogZPCsl+c8FRuw3TfM2JuNjVV4jEsPRsfIVf7cfQwo+dL5fHuwVK0sfK3nwrQAwHXKYVSRUX/nnYhsGoVaL2XN73Rt6cAxqxHjkQ3a9BF09r26AY0aIwdqdnU8vgFGPI6gPPoB3Y/lEpksGiXQyW66lk7x+7FeG0XgZY3PQQGiB/5AM/tJvHcx+LIT9I5E5JkWRtuzZt35tcsJIoxockXojbb94Zs+1wjdkV8Mcj1MoN32yHhcYwslqXoDkMQt0rJAzXv2U2ddDK9f8GBptf9NFXhXn7MuzQZNHhzKm9jRF7o6pXYDg5vGj1MARvmitHIbHmj3n6PxAK5vFWgUflXTHHrslcKLnBb+gWr8Rvj6RZqS34v96L4NqNUtdZMxz0auGRtXSLObfJ54HcebhkX6l/CJjYKyMolfJl6nBPZBdRwOOk8V2efOw/8uYkge6yqQ+x1RRIzQJCX5+OhuIDjnntv5F4puYeCUjMNDP9po=</ds:SignatureValue>
+		<ds:KeyInfo>
+			<ds:X509Data>
+				<ds:X509Certificate>MIII1zCCBr+gAwIBAgIUaq9GLGDcGqyIRCBFMSUs3vNav6QwDQYJKoZIhvcNAQELBQAwSTELMAkG
+A1UEBhMCQk0xGTAXBgNVBAoMEFF1b1ZhZGlzIExpbWl0ZWQxHzAdBgNVBAMMFlF1b1ZhZGlzIEVW
+IFNTTCBJQ0EgRzMwHhcNMTkxMjExMTIzNjExWhcNMjExMjExMTI0NjAwWjCBzzETMBEGCysGAQQB
+gjc8AgEDEwJDSDEYMBYGCysGAQQBgjc8AgECDAdaw7xyaWNoMR0wGwYDVQQPDBRQcml2YXRlIE9y
+Z2FuaXphdGlvbjEYMBYGA1UEBRMPQ0hFLTEwMy40ODkuMjE4MQswCQYDVQQGEwJDSDEQMA4GA1UE
+CAwHWsO8cmljaDEUMBIGA1UEBwwLV2FsbGlzZWxsZW4xGzAZBgNVBAoMEkhlYWx0aCBJbmZvIE5l
+dCBBRzETMBEGA1UEAwwKZmVkLmhpbi5jaDCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIB
+AMplKKSLLyIAnjkxwNCY8UcSKPEHx6vojSzGA0kfO5qoFl2pCkxODzqVqIxfeQQSHVcfRbMrjwbP
+ukU0XogKkUP7CJxotrbFCa/2hKRvexMczyEv5ME1+rxaIdQVLKDDXnrnihzBByHS9LRiCj0WE6SK
+uhXFpE50KioPmMWt/MWb3hFbMKQoMvJ59DAYq8TiDK0TJxxf/WlPdyt6H004Kad4cUeU7kReO4dh
+pN9mqD5zYC+AAeFfzhQEpxPcfo/hQQQ0STXccTXklybulmNIot7TCjorEvonFCRfKDq1ECDiNfKr
+oKJpvtLeFN7h7w/jA9VfD2vJfZJU3yxuNJ2qLemaBzLMD2orXDEKKyNcHq/7K89vkLec9gUoTgF1
+xoVpC/vs7cZHXSNzWRm7SyO6nfmonzVFF/xfPwK5SaYqXiCDz8aOClnUcDznkyMh6gw7U4Bk5Xr4
+YRrbcpXykYhWGBK2v6DtRthRJAIRGhUaQNwqVefbiEKx87Ef0pi1zT7h5EDwDNVavzsv761zjI7j
+z4RF9MmgF6N+KPJLXflmSIyXz+mvp+u56m+qOfeQtHgnzT3vg5923gqDHO816f1cqkMTQKk5Re88
+n9a0AujR6VHuBwBQd55nxr/1mc/Me7Tdkw8OQHnhwCu9ygWNOO2Fv42h63VCUtgLSm6xi3H5vv91
+AgMBAAGjggMuMIIDKjAMBgNVHRMBAf8EAjAAMB8GA1UdIwQYMBaAFOWEVNCQSZ84uvLJ4SoIxU6f
+oEg/MHgGCCsGAQUFBwEBBGwwajA5BggrBgEFBQcwAoYtaHR0cDovL3RydXN0LnF1b3ZhZGlzZ2xv
+YmFsLmNvbS9xdmV2c3NsZzMuY3J0MC0GCCsGAQUFBzABhiFodHRwOi8vZXYub2NzcC5xdW92YWRp
+c2dsb2JhbC5jb20wFQYDVR0RBA4wDIIKZmVkLmhpbi5jaDBaBgNVHSAEUzBRMEYGDCsGAQQBvlgA
+AmQBAjA2MDQGCCsGAQUFBwIBFihodHRwOi8vd3d3LnF1b3ZhZGlzZ2xvYmFsLmNvbS9yZXBvc2l0
+b3J5MAcGBWeBDAEBMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATA8BgNVHR8ENTAzMDGg
+L6AthitodHRwOi8vY3JsLnF1b3ZhZGlzZ2xvYmFsLmNvbS9xdmV2c3NsZzMuY3JsMB0GA1UdDgQW
+BBSbpgUzwBh8Jiri70pPXgcxa4bYZzAOBgNVHQ8BAf8EBAMCBaAwggF+BgorBgEEAdZ5AgQCBIIB
+bgSCAWoBaAB2AKS5CZC0GFgUh7sTosxncAo8NZgE+RvfuON3zQ7IDdwQAAABbvT+080AAAQDAEcw
+RQIgfra5hxV/IZymuG+yPk/myS61YPs/74S+Gg9L0FhZZfoCIQCjFWroOc1UfFHopLmUM1YDY7DI
+h6AVcke2H2zRHmMjCwB3AId1v+dZfPiMQ5lfvfNu/1aNR1Y2/0q1YMG06v9eoIMPAAABbvT+1B8A
+AAQDAEgwRgIhAODIvpAHOVm8Yl4AmLWqtCmXshhLG1npYfBT0Z9R/y2dAiEAsYpmaE/KA7IQ3bZq
+bYD6Q4UCxfXMypyM+B8iwzfrwZQAdQBVgdTCFpA2AUrqC5tXPFPwwOQ4eHAlCBcvo6odBxPTDAAA
+AW70/tP8AAAEAwBGMEQCIGJmmEO9xpjaItFvlywoaD1dnQ+KP847b5EzYws6hZDpAiArKEUtV8lQ
+de93E+MYrLnc4LPs32CXvv0UIhflnm1fNzANBgkqhkiG9w0BAQsFAAOCAgEABcukWJ/PNHX3rt2f
+8LEtyeVrj/eWgKF1NgT33rqc1iATJluyAGCTmfwWlKtJ0zU2oP0+mPA9psDPKyes/x02gcBwSceQ
+DdxN1bUgExZ3RgrA1xYA09qMy7+kh9+xpsaU0aAr+DXp4Vkbv+p4tMcOc3hjNY6dP5rfj4Jn1MKm
+5N+fMtR8FaR3v3G0CaBdYgGLEMReHXwdcrfbmzYlf3QLOyy1utfBsw7hKIxFcylzywSpQIkCv4Pv
+MmpExdGGHGv7riWtgSgne2K/vZFqIeG1d7HCosFTQpEbOKAjCt2b1QBGqmOwa0s/fY07ec33ZkHk
+4ZVLr8kIFX0OZTxrPKNG0cmrN64v3CPuIMbuJZTcI0qgOLBtXb2p3yKlJQuHf8pW5ojOQY30EH9o
+HudrNb92dWadd2OsyGaeh3RPVXoArVN7q1zC5swb4TmQsws9BZqLsizbhxiORarZbzmqEVCOXvrQ
+xIBfCrgmychTwv415TnTyGagQp4NBIYA2eysXHYd/jX0mXzYPR8i9WghD8qu50l8GEAKgkCdWzIG
+nL6AgYfiRviEGPffudfJypsOuxLh7BMSgwkZ9WZxPO05oHvIHjV4SX6g/ewEW6zy675jo9VOhHPf
+46i2Sbhc2R2fjKJG3sIZIs8Yyv9fCJigl/g6x6yH+JcI2TImt8YfgLKjKY4=</ds:X509Certificate>
+			</ds:X509Data>
+		</ds:KeyInfo>
+	</ds:Signature>
+	<saml2:Subject>
+		<saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent">48519</saml2:NameID>
+		<saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+			<saml2:SubjectConfirmationData InResponseTo="_c5fdb2a25cd74aaf99aed123fb0de661" NotOnOrAfter="2020-12-03T08:53:19.865Z" Recipient="https://documedis.hcisolutions.ch/2020-01/app/account/HinResponse"/>
+		</saml2:SubjectConfirmation>
+	</saml2:Subject>
+	<saml2:Conditions NotBefore="2020-12-03T08:53:09.864Z" NotOnOrAfter="2020-12-03T08:53:39.864Z">
+		<saml2:AudienceRestriction>
+			<saml2:Audience>https://documedis.hcisolutions.ch/2020-01/app/account/HinResponse</saml2:Audience>
+		</saml2:AudienceRestriction>
+	</saml2:Conditions>
+	<saml2:AuthnStatement AuthnInstant="2020-12-03T08:53:09.864Z" SessionNotOnOrAfter="2020-12-03T10:53:09.864Z">
+		<saml2:AuthnContext>
+			<saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified</saml2:AuthnContextClassRef>
+		</saml2:AuthnContext>
+	</saml2:AuthnStatement>
+	<saml2:AttributeStatement>
+		<saml2:Attribute Name="X-HIN-ASAS-UserId">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">48519</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-USERTYPE">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Personal</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-POSTALCODE">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">3027</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-LOGIN-NAME">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">chrcra1</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-POSTAL-CODE">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">3027</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-ADDRESS-2">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Postfach</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-ADDRESS-1">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Untermattweg 8</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-ORGANIZATION">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">HCI Solutions AG</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-MAIL">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">test-christophe.crausaz@hin.ch</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-ASAS-UserId">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">48519</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-COUNTRY">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ch</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-GIVEN-NAME">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Christophe</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-PERSON-CODE">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">1</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-EAN-NO-OFFICE">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">7601001362383</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-TEST-CODE">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">1</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-LOCATION">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Bern</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-COMMON-NAME">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Christophe Crausaz</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-INSTITUTION-CODE">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">1</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-LANGUAGE">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">de</saml2:AttributeValue>
+		</saml2:Attribute>
+		<saml2:Attribute Name="X-HIN-SURNAME">
+			<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Crausaz</saml2:AttributeValue>
+		</saml2:Attribute>
+	</saml2:AttributeStatement>
+</saml2:Assertion>

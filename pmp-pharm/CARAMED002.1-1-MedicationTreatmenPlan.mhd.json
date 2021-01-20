@@ -172,8 +172,8 @@
             },
             "format": {
               "system": "urn:oid:1.3.6.1.4.1.19376.1.2.3",
-              "code": "urn:ihe:pharm:dis:2010",
-              "display": "Community Medication Dispense"
+              "code": "urn:ihe:pharm:mtp:2015",
+              "display": "Community Medication Treatment Plan"
             }
           }
         ],
