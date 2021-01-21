@@ -75,7 +75,7 @@ returns IHE-SAML access token for the specified scope:
 }
 ```
 
-### 3. Query Medication List with the $find-medication-list operation 
+### 3. Query Medication List or Medication Card with the $find-medication-list operation 
 
 ```
 https://test.ahdis.ch/mag-pmp/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.999.756.42.2|CARAMED001
@@ -83,8 +83,16 @@ Accept: application/fhir+json
 Content-Type: application/fhir+json
 Authorization: IHE-SAML PHNh.....
 ```
+if you wan to query the Medication Card instead of the Medication List you need to add the format parameter
 
-### 4. Retrieve Medication List
+```
+https://test.ahdis.ch/mag-pmp/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.999.756.42.2|CARAMED001&format=urn:oid:2.16.756.5.30.1.127.3.10.10|urn:ch:cda-ch-emed:medication-card:2018
+Accept: application/fhir+json
+Content-Type: application/fhir+json
+Authorization: IHE-SAML PHNh.....
+```
+
+### 4. Retrieve Medication List or Medication Card
 
 IHE MHD 68 Document retrieve with url received from above request
 
