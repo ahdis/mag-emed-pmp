@@ -3,17 +3,13 @@
 @host = http://localhost:9090/mag-pmp
 ### @host = https://test.ahdis.ch/mag-pmp
 
-
-
 ### metadata
 GET {{host}}/fhir/metadata HTTP/1.1
 Accept: application/fhir+json
-Content-Type: application/fhir+json
 
 ### PHARM-5 Find Document References from PMP
 GET {{host}}/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.999.756.42.2|12345678 HTTP/1.1
 Accept: application/fhir+json
-Content-Type: application/fhir+json
 
 ### ITI-68 Retrieve Document APPC
 GET {{host}}/camel/xdsretrieve?uniqueId=urn:uuid:46e6e9a0-9fcf-3233-b8f6-d67003430c3c&repositoryUniqueId=2.999.756.42.1
@@ -40,12 +36,10 @@ Content-Type: text/xml
 ### Find Document References from PMP for patient 12345678
 GET {{host}}/fhir/DocumentReference?status=current&patient.identifier=urn:oid:2.999.756.42.2|12345678 HTTP/1.1
 Accept: application/fhir+json
-Content-Type: application/fhir+json
 
 ### Find Document Manifests from PMP for patient 12345678
 GET {{host}}/fhir/DocumentManifest?status=current&patient.identifier=urn:oid:2.999.756.42.2|12345678 HTTP/1.1
 Accept: application/fhir+json
-Content-Type: application/fhir+json
 
 
 ### CARAMED001: Setup a new patient
@@ -71,23 +65,19 @@ Authorization: IHE-SAML PHNhbWwyOkFzc2VydGlvbiB4bWxuczpzYW1sMj0idXJuOm9hc2lzOm5h
 ### --> 400: The patient ID in the search query does not match the auth
 GET {{host}}/fhir/DocumentReference?status=current&patient.identifier=urn:oid:2.999.756.42.2|CARAMED001 HTTP/1.1
 Accept: application/fhir+json
-Content-Type: application/fhir+json
 
 
 ### Find Document References for Patient CARAMED001 adding xua token
 ### --> 400: The patient is unknown to this community."
 GET {{host}}/fhir/DocumentReference?status=current&patient.identifier=urn:oid:2.999.756.42.2|CARAMED001 HTTP/1.1
 Accept: application/fhir+json
-Content-Type: application/fhir+json
 Authorization: IHE-SAML PHNhbWwyOkFzc2VydGlvbiB4bWxuczpzYW1sMj0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiIgSUQ9IkFzc2VydGlvbl8zZWZiZmM3OTE3YTFkM2VjNmUzM2VjNzBmNDEwMzkzZDY1NTk4MGJiIiBJc3N1ZUluc3RhbnQ9IjIwMjAtMDgtMjhUMDk6MDE6MDYuNDIxWiIgVmVyc2lvbj0iMi4wIj4KICAgIDxzYW1sMjpBdHRyaWJ1dGVTdGF0ZW1lbnQ+CiAgICAgICAgPHNhbWwyOkF0dHJpYnV0ZSBOYW1lPSJ1cm46b2FzaXM6bmFtZXM6dGM6eGFjbWw6Mi4wOnN1YmplY3Q6cm9sZSIgTmFtZUZvcm1hdD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmF0dHJuYW1lLWZvcm1hdDp1cmkiPgogICAgICAgICAgICA8c2FtbDI6QXR0cmlidXRlVmFsdWUgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnR5cGU9InhzZDphbnlUeXBlIj4KICAgICAgICAgICAgICAgIDxobDd2MzpSb2xlIHhtbG5zOmhsN3YzPSJ1cm46aGw3LW9yZzp2MyIgY29kZT0iUEFUIiBjb2RlU3lzdGVtPSIyLjE2Ljc1Ni41LjMwLjEuMTI3LjMuMTAuNiIgZGlzcGxheU5hbWU9IlBhdGllbnQiLz4KICAgICAgICAgICAgPC9zYW1sMjpBdHRyaWJ1dGVWYWx1ZT4KICAgICAgICA8L3NhbWwyOkF0dHJpYnV0ZT4KICAgICAgICA8c2FtbDI6QXR0cmlidXRlIE5hbWU9InVybjpvYXNpczpuYW1lczp0Yzp4YWNtbDoyLjA6cmVzb3VyY2U6cmVzb3VyY2UtaWQiIE5hbWVGb3JtYXQ9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDphdHRybmFtZS1mb3JtYXQ6dXJpIj4KICAgICAgICAgICAgPHNhbWwyOkF0dHJpYnV0ZVZhbHVlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhzaTp0eXBlPSJ4c2Q6c3RyaW5nIj5DQVJBRU1FRDAwMV5eXiZhbXA7Mi45OTkuNzU2LjQyLjImYW1wO0lTTzwvc2FtbDI6QXR0cmlidXRlVmFsdWU+CiAgICAgICAgPC9zYW1sMjpBdHRyaWJ1dGU+CiAgICA8L3NhbWwyOkF0dHJpYnV0ZVN0YXRlbWVudD4KPC9zYW1sMjpBc3NlcnRpb24+
 
 ### PHARM-5 Find Document References from PMP no auth
 GET {{host}}/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.999.756.42.2|CARAMED001 HTTP/1.1
 Accept: application/fhir+json
-Content-Type: application/fhir+json
 
 ### PHARM-5 Find Document References from PMP no auth
 GET {{host}}/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.999.756.42.2|CARAMED001 HTTP/1.1
 Accept: application/fhir+json
-Content-Type: application/fhir+json
 Authorization: IHE-SAML PHNhbWwyOkFzc2VydGlvbiB4bWxuczpzYW1sMj0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmFzc2VydGlvbiIgSUQ9IkFzc2VydGlvbl8zZWZiZmM3OTE3YTFkM2VjNmUzM2VjNzBmNDEwMzkzZDY1NTk4MGJiIiBJc3N1ZUluc3RhbnQ9IjIwMjAtMDgtMjhUMDk6MDE6MDYuNDIxWiIgVmVyc2lvbj0iMi4wIj4KICAgIDxzYW1sMjpBdHRyaWJ1dGVTdGF0ZW1lbnQ+CiAgICAgICAgPHNhbWwyOkF0dHJpYnV0ZSBOYW1lPSJ1cm46b2FzaXM6bmFtZXM6dGM6eGFjbWw6Mi4wOnN1YmplY3Q6cm9sZSIgTmFtZUZvcm1hdD0idXJuOm9hc2lzOm5hbWVzOnRjOlNBTUw6Mi4wOmF0dHJuYW1lLWZvcm1hdDp1cmkiPgogICAgICAgICAgICA8c2FtbDI6QXR0cmlidXRlVmFsdWUgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnR5cGU9InhzZDphbnlUeXBlIj4KICAgICAgICAgICAgICAgIDxobDd2MzpSb2xlIHhtbG5zOmhsN3YzPSJ1cm46aGw3LW9yZzp2MyIgY29kZT0iUEFUIiBjb2RlU3lzdGVtPSIyLjE2Ljc1Ni41LjMwLjEuMTI3LjMuMTAuNiIgZGlzcGxheU5hbWU9IlBhdGllbnQiLz4KICAgICAgICAgICAgPC9zYW1sMjpBdHRyaWJ1dGVWYWx1ZT4KICAgICAgICA8L3NhbWwyOkF0dHJpYnV0ZT4KICAgICAgICA8c2FtbDI6QXR0cmlidXRlIE5hbWU9InVybjpvYXNpczpuYW1lczp0Yzp4YWNtbDoyLjA6cmVzb3VyY2U6cmVzb3VyY2UtaWQiIE5hbWVGb3JtYXQ9InVybjpvYXNpczpuYW1lczp0YzpTQU1MOjIuMDphdHRybmFtZS1mb3JtYXQ6dXJpIj4KICAgICAgICAgICAgPHNhbWwyOkF0dHJpYnV0ZVZhbHVlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhzaTp0eXBlPSJ4c2Q6c3RyaW5nIj5DQVJBRU1FRDAwMV5eXiZhbXA7Mi45OTkuNzU2LjQyLjImYW1wO0lTTzwvc2FtbDI6QXR0cmlidXRlVmFsdWU+CiAgICAgICAgPC9zYW1sMjpBdHRyaWJ1dGU+CiAgICA8L3NhbWwyOkF0dHJpYnV0ZVN0YXRlbWVudD4KPC9zYW1sMjpBc3NlcnRpb24+

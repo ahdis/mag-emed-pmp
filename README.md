@@ -12,7 +12,6 @@ IHE PIXm Query [ITI-83] (https Query)
 ```
 https://test.ahdis.ch/mag-pmp/fhir/fhir/Patient/$ihe-pix?sourceIdentifier=urn:oid:1.3.6.1.4.1.21367.2017.2.5.83|MAGMED001&targetSystem=urn:oid:2.999.756.42.21&targetSystem=urn:oid:2.16.756.5.30.1.127.3.10.3 HTTP/1.1
 Accept: application/fhir+json
-Content-Type: application/fhir+json
 ```
 returns identifiers for EPR-SPID (2.16.756.5.30.1.127.3.10.3) and MPI-ID (2.999.756.42.2)
 
@@ -80,7 +79,6 @@ returns IHE-SAML access token for the specified scope:
 ```
 https://test.ahdis.ch/mag-pmp/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.999.756.42.2|CARAMED001
 Accept: application/fhir+json
-Content-Type: application/fhir+json
 Authorization: IHE-SAML PHNh.....
 ```
 if you wan to query the Medication Card instead of the Medication List you need to add the format parameter
@@ -88,7 +86,6 @@ if you wan to query the Medication Card instead of the Medication List you need 
 ```
 https://test.ahdis.ch/mag-pmp/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.999.756.42.2|CARAMED001&format=urn:oid:2.16.756.5.30.1.127.3.10.10|urn:ch:cda-ch-emed:medication-card:2018
 Accept: application/fhir+json
-Content-Type: application/fhir+json
 Authorization: IHE-SAML PHNh.....
 ```
 
@@ -99,7 +96,6 @@ IHE MHD 68 Document retrieve with url received from above request
 ```
 https://test.ahdis.ch/mag-pmp/fhir/camel/xdsretrieve?uniqueId=51570022-9b6a-474b-927b-e6a1b193ce16&repositoryUniqueId=2.999.756.42.1
 Accept: application/fhir+json
-Content-Type: application/fhir+json
 Authorization: IHE-SAML PHNh.....
 ```
 
