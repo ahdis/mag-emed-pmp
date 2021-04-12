@@ -13,9 +13,11 @@ Accept: application/fhir+json
 
 ### ITI-68 Retrieve Document APPC
 GET {{host}}/camel/xdsretrieve?uniqueId=urn:uuid:46e6e9a0-9fcf-3233-b8f6-d67003430c3c&repositoryUniqueId=2.999.756.42.1
+Accept: text/xml
 
 ### ITI-68 Retrieve Document Prescription
 GET {{host}}/camel/xdsretrieve?uniqueId=urn:uuid:0fba239a-f518-11e9-802a-5aa538984bd8&repositoryUniqueId=2.999.756.42.1
+Accept: text/xml
 
 ### $transform operation 
 POST https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationListDocumentToBundle
