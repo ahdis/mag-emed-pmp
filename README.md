@@ -153,7 +153,7 @@ returns identifiers for EPR-SPID (2.16.756.5.30.1.127.3.10.3) and MPI-ID (2.999.
 
 ### 2. Get Access Token based on Authenticated Healthcare Professional 
 
-Get Assertion based on IdP SAML token, here saml token is abbreviated for testing, Patient (resourceId as EPR-SPID), Role (NORM) and PurposeOfUse (HCP) for Health Professional who is identified with GLN 7601002469191
+Get Assertion based on IdP SAML token, here SAML token is abbreviated for testing, Patient (resourceId as EPR-SPID), Role (NORM) and PurposeOfUse (HCP) for Health Professional who is identified with GLN 7601002469191
 
 ```
 POST https://test.ahdis.ch/mag-pmp/camel/assertion HTTP/1.1
@@ -171,7 +171,7 @@ Content-Type: application/xml
 </saml2:Assertion>
 ```
 
-returns IHE-SAML access token for the specified scope:
+returns XUA Authorization Assertion for the specified scope:
 
 ```json
 {
