@@ -259,3 +259,8 @@ Authorization: IHE-SAML PHN...
 ```
 
 The server returns a HTTP Status code appropriate to the processing outcome, conforming to the transaction specification requirements as specified in http://hl7.org/fhir/R4/http.html#transaction
+
+
+### Copy cubernetes log from testinstance
+
+kubectl cp mag-pmp-57d4c64797-pj5p6:logs ./pmplogs/
