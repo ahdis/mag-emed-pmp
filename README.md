@@ -104,7 +104,7 @@ Authorization: IHE-SAML PHNh.....
 FHIR API $transform Operation
 
 ```
-POST https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationListDocumentToBundle
+POST https://test.ahdis.ch/matchbox/fhir/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationListDocumentToBundle
 Accept: application/fhir+json;fhirVersion=4.0
 Content-Type: text/xml
 ```
@@ -197,7 +197,7 @@ The following maps can be used to transform the different type of documents
 | [Medication Card document](http://fhir.ch/ig/ch-emed/medication-card-document.html) | [BundleToCdaChEmedMedicationCardDocument](http://fhir.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaChEmedMedicationCardDocument) |
 
 ```
-POST https://test.ahdis.ch/r4/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaChEmedMedicationDispenseDocument
+POST https://test.ahdis.ch/matchbox/fhir/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaChEmedMedicationDispenseDocument
 Content-Type: application/fhir+json;fhirVersion=4.0
 Accept: text/xml
 
@@ -263,4 +263,4 @@ The server returns a HTTP Status code appropriate to the processing outcome, con
 
 ### Copy cubernetes log from testinstance
 
-kubectl cp mag-pmp-57d4c64797-pj5p6:logs ./pmplogs/
+kubectl cp mag-pmp-5475c84785-4zg4c:logs ./pmplogs/
