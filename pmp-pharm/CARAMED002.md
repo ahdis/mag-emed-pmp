@@ -1,3 +1,0 @@
-CARAMED002.1-1-MTP-HPC: 260B020F-683F-4859-B6E9-F95021D1D79E, 260b020f-683f-4859-b6e9-f95021d1d79e
-CARAMED002.1-2-MedicationDispense: 488BD23A-20C6-11E6-B67B-9E71128CAE77, 2011-11-29T11:01:00+01:00
-                                                                         

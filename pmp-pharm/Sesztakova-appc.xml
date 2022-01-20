@@ -26,7 +26,7 @@
             <Resource>
                 <ResourceMatch MatchId="urn:hl7-org:v3:function:II-equal">
                     <AttributeValue DataType="urn:hl7-org:v3#II">
-                        <hl7:InstanceIdentifier root="2.999.756.42.2" extension="CARAMED005" />
+                        <hl7:InstanceIdentifier root="2.16.756.5.30.1.191.1.0.2.1" extension="c55f4ca7-bd4e-4134-8dcd-56b793ade958" />
                         <!-- Example patient ID. Please note that 2.999.756.42.2 would be the XAD-PID used in the registry -->
                     </AttributeValue>
                     <ResourceAttributeDesignator DataType="urn:hl7-org:v3#II" AttributeId="urn:ihe:iti:ser:2016:patient-id" />

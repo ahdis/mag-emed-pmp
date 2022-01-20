@@ -77,14 +77,14 @@ returns XUA Authorization Assertion for the specified scope:
 ### 3. Query Medication List or Medication Card with the $find-medication-list operation 
 
 ```
-https://test.ahdis.ch/mag-pmp/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.999.756.42.2|CARAMED001
+https://test.ahdis.ch/mag-pmp/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.16.756.5.30.1.191.1.0.2.1|c55f4ca7-bd4e-4134-8dcd-56b793ade958
 Accept: application/fhir+json
 Authorization: IHE-SAML PHNh.....
 ```
 if you wan to query the Medication Card instead of the Medication List you need to add the format parameter
 
 ```
-https://test.ahdis.ch/mag-pmp/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.999.756.42.2|CARAMED001&format=urn:oid:2.16.756.5.30.1.127.3.10.10|urn:ch:cda-ch-emed:medication-card:2018
+https://test.ahdis.ch/mag-pmp/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.16.756.5.30.1.191.1.0.2.1|c55f4ca7-bd4e-4134-8dcd-56b793ade958&format=urn:oid:2.16.756.5.30.1.127.3.10.10|urn:ch:cda-ch-emed:medication-card:2018
 Accept: application/fhir+json
 Authorization: IHE-SAML PHNh.....
 ```
@@ -207,6 +207,11 @@ Accept: text/xml
 ### 4. Publish CDA document with IHE MHD Provide Document Bundle transaction
 
 The document has to be submitted according to the IHE MHD Provide Document Bundle [ITI-65](http://fhir.ch/ig/ch-epr-mhealth/iti-65.html) transaction with the following special considerations for each of the resource elements within the Bundle. As a Document Source you need to provide different identifiers:
+
+TODO: necessary correspondence between DocumentEntry and CDA / FHIR
+- CDA.id   DocumentEntry.masterIdentifier
+- CDA.effectiveTime   DocumentEntry.date,  DocumentEntry.content[0].attachment.creation
+- Adjust Mapping with List to DocumentManifest
 
 | Resource Element  | Value  |
 |---|---|

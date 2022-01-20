@@ -1,0 +1,28 @@
+
+//
+
+APPPC Doucment
+
+"entry": [
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "http://test.ahdis.ch/mag-pmp/camel/xdsretrieve?uniqueId=urn:uuid:e0426393-7969-49b5-bc05-ecf4e85048fb&repositoryUniqueId=2.999.756.42.1",
+        "lastModified": "2022-01-20T13:05:28.141+01:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "List/b3c9e443-89b7-4bff-8cce-f4b3f0f80e86",
+        "lastModified": "2022-01-20T13:05:28.141+01:00"
+      }
+    },
+    {
+      "response": {
+        "status": "201 Created",
+        "location": "DocumentReference/6b02eac3-3826-4d6d-869e-9530e91ad72d",
+        "lastModified": "2022-01-20T13:05:28.141+01:00"
+      }
+    }
+  ]
