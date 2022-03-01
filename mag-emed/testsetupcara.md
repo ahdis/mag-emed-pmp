@@ -6,10 +6,12 @@ data of the reference environment. This allows to get an Assertion from the vali
 
 New in 2022:
 
-| First Name |  Last name  | Gender  | DOB     | EPR-SPID (2.16.756.5.30.1.127.3.10.3) | MPI-PID (2.16.756.5.30.1.191.1.0.2.1)  | CHUV (2.16.756.5.30.1.196.3.2.1) |
-|------------|--------------|---------|---------|---------------------------------------|--------------------------|-------------------------------------------|
-| Leandra Corina  | Behluli-Qazimi         | female    | 2002-12-21  | 761337611932009095                    | 7a4ec59f-a024-4cfb-bc04-3339c53cb9ac               |  MAGMED005 |
-| Jett Flynn| Sesztáková        | male       | 1993-01-27 | 761337615758291047                    | c55f4ca7-bd4e-4134-8dcd-56b793ade958             |  MAGMED006 | 
+| First Name |  Last name  | Gender  | DOB     | EPR-SPID (2.16.756.5.30.1.127.3.10.3) | MPI-PID (2.16.756.5.30.1.191.1.0.2.1)  | CHUV (2.16.756.5.30.1.196.3.2.1) | usage |
+|------------|--------------|---------|---------|---------------------------------------|--------------------------|-------------------------------------------|----------|
+| Jett Flynn| Sesztáková        | male       | 1993-01-27 | 761337615758291047                    | c55f4ca7-bd4e-4134-8dcd-56b793ade958             |  MAGMED006 | demo   |
+| Leandra Corina  | Behluli-Qazimi         | female    | 2002-12-21  | 761337611932009095                    | 7a4ec59f-a024-4cfb-bc04-3339c53cb9ac               |  MAGMED005 | export |
+| Romuald René Guy  | MUELLER-PATTI         | male    |1993-09-2  | 761337614574943741                    |    50987ab8-3344-4349-8aaa-cc3bc9d9dec8               |  MAGMED007 | no appc doc |
+
 
 
 1. Patient has to be setup in CARA, patient should be visible via PDQm Queries, e.g:
@@ -26,13 +28,8 @@ New in 2022:
 - You need to upload an APPC document that the Patient participates in the PMP, see pmp-pharm\*-appc.xml
 - If you click on Query Medication List you should get one entry
 
-3. Submitting a CDA document
-   - CDA id (uuid) into the DocumentEntry.masterIdentifier
-   - CDA effective Time into documentEntry.creationTime
 
-
-
-if there ary pmp problems check also https://sct-form.hcuge.ch/sharedtreatmentplan/mhd/logs
+if there are any pmp problems check also https://sct-form.hcuge.ch/sharedtreatmentplan/mhd/logs
 
 
 

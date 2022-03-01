@@ -268,4 +268,9 @@ The server returns a HTTP Status code appropriate to the processing outcome, con
 
 ### Copy cubernetes log from testinstance
 
-kubectl cp mag-pmp-7f8d4c78b-274d7:logs ./pmplogs/
+kubectl cp mag-pmp-84ccc7fdbd-jc7wl:logs ./pmplogs/
+
+kubectl cp mag-pmp-84ccc7fdbd-b47sr:logs ./pmplogs/
+
+
+kubectl exec --stdin --tty mag-pmp-84ccc7fdbd-jc7wl -- /bin/sh
