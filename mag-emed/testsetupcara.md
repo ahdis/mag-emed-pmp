@@ -31,7 +31,9 @@ New in 2022:
 
 if there are any pmp problems check also https://sct-form.hcuge.ch/sharedtreatmentplan/mhd/logs
 
+### HP setup
 
+https://epr.cara.int.post-ehealth.ch/
 
 
 

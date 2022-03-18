@@ -5,6 +5,6 @@ get pod from number from https://console.cloud.google.com/kubernetes/deployment/
 
 ```
 gcloud container clusters get-credentials cluster-ch-01 --zone europe-west6-a --project fhir-ch \
-kubectl cp mag-pmp-6979c45c9d-76hv4:logs ./pmplogs/
-
+kubectl cp mag-pmp-cf48fddd6-sdrjg:logs ./pmplogs/
+kubectl logs --follow mag-pmp-cf48fddd6-sdrjg
 ```

@@ -1,0 +1,154 @@
+<saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" ID="Assertion_34cd588493ad8893671960657c97ea88fc4d0033" IssueInstant="2022-03-18T08:06:11.003Z" Version="2.0">
+    <saml2:Issuer>test.epr.fed.hin.ch</saml2:Issuer>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+            <ds:Reference URI="#Assertion_34cd588493ad8893671960657c97ea88fc4d0033">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                        <ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="xs"/>
+                    </ds:Transform>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                <ds:DigestValue>anMIFAp+/+Q88WyxvY/zcHLkk+ShuYuu8BH/Wz+JXHc=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>YzizyTNw/PXEpIdz4DpWGL6IatGw2DHXyh8zvEYF2ukkStjcVmBSxGQ+dpDS0IcQIggAJG9a+uEXNY33oW75RRD1CqURgaligldTlpsV2wFmlqPfouIK6JZ6fw6iO6QHZb6XB33uYyolU2YBXU4b54Nagb8pxDXN9GvuxkptHiQr/pxutCK3dQoLfwPImH4nM5b8OUwyKlkjPWr8s9R00d09rRfPkHh0C/j9EAcdwsltdSTS5235VC6682G+X1FTBVlni6Tlxl3pGQvfLaUJWZELsdiySwhR5PLGwrfi1sfhPt8JZQbQ2hYSRfGJ9aYQqfUbvgO7cO6cBNPurIc07Pvbe7Amz08m2OxzxJprrtzsGUrY+sffW3RgjEblz9lN+k/mVoQ8yc/azn07un7WKLjOQjOTgV+L2D1NeHY+qjMywipBiDwALQkXKxyPoLCQW+XYlRgovH6v4niXVLQPTsRHsJnZlGj4eJXKrFu6sQlvuQjgrGsgtiW19m50PbvI3oAgJt4z+brNi46u6WwaPIAdjOoLLG1wLpx5va0J21ZJeWkP19Vc1NiP0rm68BtR/MpEQjmIgOLSMy28lcbQxt9XN04vXeEp2JcTCSrqOm5KZzHoQquxp+vXW4cFERnC9Im1NDY0Wyc4/cUCukdoRoowE+lWpkc3LcikuX2euXQ=</ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>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</ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </ds:Signature>
+    <saml2:Subject>
+        <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent">HIN_51ad311218138380bdf7058a85822b531ac3d53dbecd24645658ae2d0ba6dc49</saml2:NameID>
+        <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+            <saml2:SubjectConfirmationData InResponseTo="sc-e4087c20-3b31-4a67-885c-a274f140433b" NotOnOrAfter="2022-03-18T10:06:11.004Z" Recipient="http://scapp1-dev/sc-dvlp/sc/ord/searchMedicationHistory.pbc"/>
+        </saml2:SubjectConfirmation>
+    </saml2:Subject>
+    <saml2:Conditions NotBefore="2022-03-18T08:06:11.003Z" NotOnOrAfter="2022-03-18T08:11:11.003Z">
+        <saml2:AudienceRestriction>
+            <saml2:Audience>http://scapp1-dev/sc-dvlp/sc/ord/searchMedicationHistory.pbc</saml2:Audience>
+        </saml2:AudienceRestriction>
+    </saml2:Conditions>
+    <saml2:AuthnStatement AuthnInstant="2022-03-18T08:06:11.003Z" SessionNotOnOrAfter="2022-03-18T10:06:11.003Z">
+        <saml2:AuthnContext>
+            <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified</saml2:AuthnContextClassRef>
+        </saml2:AuthnContext>
+    </saml2:AuthnStatement>
+    <saml2:AttributeStatement>
+        <saml2:Attribute Name="X-HIN-ASAS-UserId">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">66782</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-USERTYPE">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Team</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-POSTALCODE">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">1011</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-LOGIN-NAME">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">tchuv1</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-POSTAL-CODE">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">1011</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-AGW-LOGIN-NAME">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">agwchuv1</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-ADDRESS-1">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Rue du Bugnon 46</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-ORGANIZATION">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">CHUV - Centre hospitalier universitaire vaudois</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-MAIL">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">test-chuv1@hin.ch</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-ASAS-UserId">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">66782</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="dateofbirth">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">1972-04-25+01:00</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-COUNTRY">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">ch</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-PERSON-CODE">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">0</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-AUTH-METHOD">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">FUTURAE</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-EAN-NO-OFFICE">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">7601002074803</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-TEST-CODE">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">1</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-SESSION-IDENTIFIER">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">8f6e10ac480abxAj4HK4fGG/McIr+RHfI5mxojuWhu+/yhOM3aCygms=</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-LOCATION">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Lausanne</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-COMMON-NAME">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">test-chuv</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-USEREXTID">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">66782</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-INSTITUTION-CODE">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">1</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-LANGUAGE">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">fr</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">test-chuv</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="X-HIN-SURNAME">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">test-chuv</saml2:AttributeValue>
+        </saml2:Attribute>
+    </saml2:AttributeStatement>
+</saml2:Assertion>
