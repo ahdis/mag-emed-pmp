@@ -50,8 +50,8 @@ Get Assertion based on IdP SAML token, here SAML token is abbreviated for testin
 ```
 POST https://test.ahdis.ch/mag-pmp/camel/assertion HTTP/1.1
 Scope: resourceId/761337610445502987 purposeOfUse/NORM role/HCP
-Accept: application/json
-Content-Type: application/xml
+Accept: application/json;charset=UTF-8
+Content-Type: application/xml;charset=UTF-8
 
 <saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" Version="2.0">
    <saml2:AttributeStatement>
@@ -105,8 +105,8 @@ FHIR API $transform Operation
 
 ```
 POST https://test.ahdis.ch/matchbox/fhir/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationListDocumentToBundle
-Accept: application/fhir+json;fhirVersion=4.0
-Content-Type: text/xml
+Accept: application/fhir+json;fhirVersion=4.0;charset=UTF-8
+Content-Type: text/xml;charset=UTF-8
 ```
 
 ## Updating the medication
@@ -118,8 +118,8 @@ IHE PIXm Query [ITI-83] (https Query)
 
 ```
 https://test.ahdis.ch/mag-pmp/fhir/fhir/Patient/$ihe-pix?sourceIdentifier=urn:oid:1.3.6.1.4.1.21367.2017.2.5.83|MAGMED001&targetSystem=urn:oid:2.999.756.42.21&targetSystem=urn:oid:2.16.756.5.30.1.127.3.10.3 HTTP/1.1
-Accept: application/fhir+json
-Content-Type: application/fhir+json
+Accept: application/fhir+json;charset=UTF-8
+Content-Type: application/fhir+json;charset=UTF-8
 ```
 returns identifiers for EPR-SPID (2.16.756.5.30.1.127.3.10.3) and MPI-ID (2.999.756.42.2)
 
@@ -158,8 +158,8 @@ Get Assertion based on IdP SAML token, here SAML token is abbreviated for testin
 ```
 POST https://test.ahdis.ch/mag-pmp/camel/assertion HTTP/1.1
 Scope: resourceId/761337610445502987 purposeOfUse/NORM role/HCP
-Accept: application/json
-Content-Type: application/xml
+Accept: application/json;charset=UTF-8
+Content-Type: application/xml;charset=UTF-8
 
 <saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" Version="2.0">
    <saml2:AttributeStatement>
@@ -198,8 +198,8 @@ The following maps can be used to transform the different type of documents
 
 ```
 POST https://test.ahdis.ch/matchbox/fhir/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/BundleToCdaChEmedMedicationDispenseDocument
-Content-Type: application/fhir+json;fhirVersion=4.0
-Accept: text/xml
+Content-Type: application/fhir+json;charset=UTF-8
+Accept: text/xml;charset=UTF-8
 
 < ./pmp-pharm/Bundle-1-2-MedicationDispense.json
 ```
@@ -257,8 +257,8 @@ The Provide Document Bundle message is sent to the base URL as defined in FHIR. 
 
 ```
 POST https://test.ahdis.ch/mag-pmp/fhir/
-Accept: application/fhir+json
-Content-Type: application/fhir+json
+Accept: application/fhir+json;charset=UTF-8
+Content-Type: application/fhir+json;charset=UTF-8
 Authorization: IHE-SAML PHN...
 
 ```
