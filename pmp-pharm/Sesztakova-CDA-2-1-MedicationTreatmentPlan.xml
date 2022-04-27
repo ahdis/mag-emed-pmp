@@ -16,8 +16,6 @@
 <!-- Adjustd for PMP
     - new doucment id D0CC508C-A5B7-4B5B-9BDF-8758E755389A   d0cc508c-a5b7-4b5b-9bdf-8758e755389a
 	- added demographics
-	- changed MORN to ACM
-	- changed EVE TO ACV
 	- effective Time 20120204140000+0100 is for DocumentEntry  2012-02-04T14:00:00+01:00 
 -->
 <!-- ************************************************************ -->
@@ -215,7 +213,7 @@
 								<sequenceNumber value="1" />
 								<substanceAdministration classCode="SBADM" moodCode="INT">
 									<effectiveTime xsi:type="EIVL_TS">
-										<event code="ACM" />
+										<event code="MORN" />
 									</effectiveTime>
 									<doseQuantity unit="732936001" value="1" />
 									<consumable>
@@ -229,7 +227,7 @@
 								<sequenceNumber value="2" />
 								<substanceAdministration classCode="SBADM" moodCode="INT">
 									<effectiveTime xsi:type="EIVL_TS">
-										<event code="ACV" />
+										<event code="EVE" />
 									</effectiveTime>
 									<doseQuantity unit="732936001" value="0.5" />
 									<consumable>

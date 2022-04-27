@@ -13,9 +13,8 @@
 <!-- 2021.04.28: Michaela Ziegler, ahdis ag: Remove original representation -->
 <!-- 2021.06.01: Oliver Egger: Update to next CDA-CH-EMED 0.97 -->
 <!-- Adjustd for PMP
-    - new doucment id E9E086B5-CDE0-4ECA-888D-D4A733875D98   
+    - new doucment id e9e086b5-cde0-4eca-888d-d4a733875d98   
 	- added demographics
-	- changed MORN to ACM
 	- effective Time 20111129110000+0100 is for DocumentEntry  2011-11-29T11:00:00+01:00 
 -->
 <!-- ************************************************************ -->
@@ -173,7 +172,7 @@
 								<high nullFlavor="UNK" />
 							</effectiveTime>
 							<effectiveTime xsi:type="EIVL_TS" operator="A">
-								<event code="ACM" />
+								<event code="MORN" />
 							</effectiveTime>
 							<repeatNumber nullFlavor="NI" />
 							<routeCode code="20053000" codeSystem="0.4.0.127.0.16.1.1.2.1" displayName="Oral use" />

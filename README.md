@@ -270,7 +270,8 @@ The server returns a HTTP Status code appropriate to the processing outcome, con
 
 kubectl cp mag-pmp-84ccc7fdbd-jc7wl:logs ./pmplogs/
 
-kubectl cp mag-pmp-84ccc7fdbd-b47sr:logs ./pmplogs/
+kubectl cp mag-pmp-84b957c6bb-wbvvs:logs ./pmplogs/
 
 
 kubectl exec --stdin --tty mag-pmp-84ccc7fdbd-jc7wl -- /bin/sh
+

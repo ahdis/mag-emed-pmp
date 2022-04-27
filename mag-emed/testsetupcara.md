@@ -29,8 +29,9 @@ New in 2022:
 - If you click on Query Medication List you should get one entry
 
 
-if there are any pmp problems check also https://sct-form.hcuge.ch/sharedtreatmentplan/mhd/logs
+if there are any pmp problems check also https://sct-form.hcuge.ach/sharedtreatmentplan/mhd/logs
 
+currently: https://pmp.posttenebrassilico.ch/pmp/mhd/logs
 ### HP setup
 
 https://epr.cara.int.post-ehealth.ch/
