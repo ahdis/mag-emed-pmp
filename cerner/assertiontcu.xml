@@ -1,0 +1,77 @@
+<saml2:Assertion xmlns:del="urn:oasis:names:tc:SAML:2.0:conditions:delegation"
+    xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="sc-c0ce3379-673f-4c17-a8db-664914eef7c4" IssueInstant="2022-05-23T14:26:25.427Z" Version="2.0">
+    <saml2:Issuer>xua.hin.ch</saml2:Issuer>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+            <ds:Reference URI="#sc-c0ce3379-673f-4c17-a8db-664914eef7c4">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                        <ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="del xsd"/>
+                    </ds:Transform>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                <ds:DigestValue>i0E9uxP2XUxLJ1x0xqmakJSVhhE0NTp+W9sGjZ+lMnU=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>
+Sqy52cn/88wyNBw+GARNKxFbSBsZbMOJeUX772Eh0/UecEbIaxO6dd5OgtpIn5YmEsN8T4VISVc3&#xd; nRfmqVGbC7pw2Q2uPN8/rokz46U9qZgxtD2ytKgBaS/XT4XjT6SNAsuWolj8MwGXj9ZyYrOCMDwJ&#xd; bC6xGXe57tAth41Myy+EqHtv5pepd5yK8rNAzhj9GlvsnreAjAnGRy+7upgDiPbczLYwtmC2Aw77&#xd; qbdVGyF7pVdgk23Z2WkvgVOLfAQHndHgOY1l4B9zarHpSk5XtWZgV7jCo0dbbxwldgB++EcN78rC&#xd; FgaPasdbP7kPlLjcYAUXzGZq3CNu8wf3otWGmw==
+        </ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>MIIDLTCCAhWgAwIBAgIEUaB7TzANBgkqhkiG9w0BAQsFADBHMQswCQYDVQQGEwJjaDENMAsGA1UE ChMEMjExMTENMAsGA1UECxMEdGVzdDEaMBgGA1UEAxMRc29hcmlhbiBjbGluaWNhbHMwHhcNMTkw NTEwMTkxNzA1WhcNMjkwNTA3MTkxNzA1WjBHMQswCQYDVQQGEwJjaDENMAsGA1UEChMEMjExMTEN MAsGA1UECxMEdGVzdDEaMBgGA1UEAxMRc29hcmlhbiBjbGluaWNhbHMwggEiMA0GCSqGSIb3DQEB AQUAA4IBDwAwggEKAoIBAQCGLU+xsVqO4ck/zbesxrr0dxz5nzkYJGq04HD1oOyOVtqMHJoM9tFb KEZGK6jlK0HfFfpHapIKRGHsyXedfnOQG/rR2YyQKRRFpHJWhtD7bR858ObPUfdmvvDxRVyd38NU /dE27YU+C6sMut/UTl1WSYn6d2MU2TInlW8rQ35kUFoYwArmP/394hpnlk8eWFSpU2NMSHmgv2w9 9hrAu4+sGUWw9tMypbCpqoB3+KHO6+qLZeqFW3WOORpUQ9qFiyc5PsU4OdtQtzpZrhQlkT377PDS WTEBTZtg8q7T5Egrl5GquUTYcVRk8r4V0I/mJgnQrnpi6xz/ZCnjRcgF+v5XAgMBAAGjITAfMB0G A1UdDgQWBBRVBeuP87C7UruJArNoPmUOhrss8TANBgkqhkiG9w0BAQsFAAOCAQEAHG1KtzIa7bJC FP8d9FGAe7gfEJQUNFBaSr9rCDwG8K3cAMOMPkUaUI81q4Gi0EdGn0HZ8PaPQ5ex8ISVI4p4HmKQ /tKZWZVMxkH07nuobUDQMpCH9x2bzbIlOF07A2DWiYR8aA7Aa2HZaWXZY+VzToS9AUEsguwu4I/o +t78pknVVwC3tFYQb3j1nZU3hGSOYxLpK3FTJcBi7cEw9itZ1QxvmjEkWmyXVijg3PH1ykbcdyFJ Z5Ms7CZkmgbKgLi2Sl1k3kzeukUI9HUxA6nsCVwXnVKl9xqmtsEMxgh0FDiBEiwNX0MH7EmiJlRD 1WWwyQComC8KHI75JI3oKfyYwA==</ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </ds:Signature>
+    <saml2:Subject>
+        <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" NameQualifier="urn:gs1:gln">2000040030829</saml2:NameID>
+        <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+            <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" NameQualifier="urn:e-health-suisse:technical-user-id">urn:oid:1.3.6.1.4.1.343</saml2:NameID>
+        </saml2:SubjectConfirmation>
+    </saml2:Subject>
+    <saml2:Conditions NotBefore="2022-05-23T14:26:25.427Z" NotOnOrAfter="2022-05-23T14:31:25.427Z">
+        <saml2:AudienceRestriction>
+            <saml2:Audience>urn:e-health-suisse:token-audience:all-communities</saml2:Audience>
+        </saml2:AudienceRestriction>
+        <saml2:Condition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="del:DelegationRestrictionType">
+            <del:Delegate>
+                <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent" NameQualifier="urn:e-health-suisse:technical-user-id">urn:oid:1.3.6.1.4.1.343</saml2:NameID>
+            </del:Delegate>
+        </saml2:Condition>
+    </saml2:Conditions>
+    <saml2:AuthnStatement AuthnInstant="2022-05-23T14:26:25.427Z" SessionNotOnOrAfter="2022-05-23T14:36:25.427Z">
+        <saml2:AuthnContext>
+            <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified</saml2:AuthnContextClassRef>
+        </saml2:AuthnContext>
+    </saml2:AuthnStatement>
+    <saml2:AttributeStatement>
+        <saml2:Attribute Name="urn:oasis:names:tc:xacml:2.0:subject:role" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:anyType">
+                <Role xmlns="urn:hl7-org:v3" code="HCP" codeSystem="2.16.756.5.30.1.127.3.10.6" codeSystemName="ch-ehealth-codesystem-role" displayName="Healthcare professional" xsi:type="CE"/>
+            </saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="urn:oasis:names:tc:xspa:1.0:subject:purposeofuse" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:anyType">
+                <PurposeOfUse xmlns="urn:hl7-org:v3" code="AUTO" codeSystem="2.16.756.5.30.1.127.3.10.5" codeSystemName="ch-ehealth-codesystem-purposeOfUse" displayName="Automatic Upload" xsi:type="CE"/>
+            </saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="urn:oasis:names:tc:xacml:2.0:resource:resource-id" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:string">761337611932009095^^^&amp;2.16.756.5.30.1.127.3.10.3&amp;ISO</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="urn:oasis:names:tc:xspa:1.0:subject:subject-id" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:string">Oliver Egger</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="urn:oasis:names:tc:xspa:1.0:subject:organization" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:string">Centre hospitalier universitaire vaudois</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="urn:oasis:names:tc:xspa:1.0:subject:organization-id" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:anyURI">urn:oid:1.1.44.17.205</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="urn:ihe:iti:xca:2010:homeCommunityId" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+            <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:anyURI">urn:oid:2.16.756.5.30.1.191.1.0</saml2:AttributeValue>
+        </saml2:Attribute>
+    </saml2:AttributeStatement>
+</saml2:Assertion>

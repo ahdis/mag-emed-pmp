@@ -1,0 +1,217 @@
+{
+    "resourceType": "Bundle",
+    "meta": {
+        "profile": [
+            "http://fhir.ch/ig/ch-epr-mhealth/StructureDefinition/ch-mhd-providedocumentbundle-comprehensive",
+            "http://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Comprehensive.ProvideBundle"
+        ]
+    },
+    "type": "transaction",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:d1847589-d3b9-4688-b011-7cd0bd6eda02",
+            "resource": {
+                "resourceType": "List",
+                "extension": [
+                    {
+                        "url": "http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-designationType",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "71388002",
+                                    "display": "Procedure (procedure)"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "http://profiles.ihe.net/ITI/MHD/StructureDefinition/ihe-sourceId",
+                        "valueIdentifier": {
+                            "system": "urn:ietf:rfc:3986",
+                            "value": "urn:uuid:2.16.756.5.30.1.196.3.2.1"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:uuid:ec9fae7e-eba3-4d42-a0b9-1d701177604e"
+                    },
+                    {
+                        "use": "usual",
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:oid:2.25.314526921400693092854094004568007860302"
+                    }
+                ],
+                "status": "current",
+                "mode": "changes",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://profiles.ihe.net/ITI/MHD/CodeSystem/MHDlistTypes",
+                            "code": "submissionset",
+                            "display": "SubmissionSet as a FHIR List"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "https://test.ahdis.ch/mag-pmp/fhir/Patient/7a4ec59f-a024-4cfb-bc04-3339c53cb9ac"
+                },
+                "date": "2022-05-12T11:04:36-04:00",
+                "entry": [
+                    {
+                        "item": {
+                            "reference": "urn:uuid:6621f43a-7adc-44aa-acf4-2928e50a4898"
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "List"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:6621f43a-7adc-44aa-acf4-2928e50a4898",
+            "resource": {
+                "resourceType": "DocumentReference",
+                "contained": [
+                    {
+                        "resourceType": "Patient",
+                        "id": "localPatient",
+                        "identifier": [
+                            {
+                                "use": "usual",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                            "code": "MR",
+                                            "display": "Medical Record Number"
+                                        }
+                                    ]
+                                },
+                                "system": "urn:oid:2.16.756.5.30.1.196.3.2.1",
+                                "value": "MAGMED005"
+                            }
+                        ]
+                    }
+                ],
+                "extension": [
+                    {
+                        "url": "http://fhir.ch/ig/ch-epr-mhealth/StructureDefinition/ch-ext-author-authorrole",
+                        "valueCoding": {
+                            "system": "urn:oid:2.16.756.5.30.1.127.3.10.6",
+                            "code": "HCP",
+                            "display": "Healthcare professional"
+                        }
+                    }
+                ],
+                "masterIdentifier": {
+                    "system": "urn:ietf:rfc:3986",
+                    "value": "urn:uuid:04b0cb6c-cd72-4478-ad1c-447ab921bc6b"
+                },
+                "identifier": [
+                    {
+                        "use": "usual",
+                        "system": "urn:ietf:rfc:3986",
+                        "value": "urn:oid:2.25.6234882179615453887696968147131284587"
+                    }
+                ],
+                "status": "current",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "721912009",
+                            "display": "Medication summary document (record artifact)"
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "440545006",
+                                "display": "Prescription record (record artifact)"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "https://test.ahdis.ch/mag-pmp/fhir/Patient/7a4ec59f-a024-4cfb-bc04-3339c53cb9ac"
+                },
+                "date": "2022-05-12T11:04:36.748-04:00",
+                "description": "Medication Treatment Plan",
+                "securityLabel": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "17621005",
+                                "display": "Normally accessible"
+                            }
+                        ]
+                    }
+                ],
+                "content": [
+                    {
+                        "attachment": {
+                            "contentType": "text/xml",
+                            "language": "en-US",
+                            "url": "urn:uuid:94814829-46e0-4c5c-879d-d28e0fc10f52",
+                            "creation": "2022-05-12T11:04:36-04:00"
+                        },
+                        "format": {
+                            "system": "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode",
+                            "code": "urn:ihe:pharm:mtp:2015",
+                            "display": "Pharmacy MTP"
+                        }
+                    }
+                ],
+                "context": {
+                    "facilityType": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "22232009",
+                                "display": "Hospital (environment)"
+                            }
+                        ]
+                    },
+                    "practiceSetting": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "394802001",
+                                "display": "General medicine (qualifier value)"
+                            }
+                        ]
+                    },
+                    "sourcePatientInfo": {
+                        "reference": "#localPatient"
+                    }
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "DocumentReference"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:94814829-46e0-4c5c-879d-d28e0fc10f52",
+            "resource": {
+                "resourceType": "Binary",
+                "contentType": "text/xml",
+                "data": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KCjxDbGluaWNhbERvY3VtZW50IHhtbG5zPSJ1cm46aGw3LW9yZzp2MyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6cGhhcm09InVybjppaGU6cGhhcm0iPgogIDxyZWFsbUNvZGUgY29kZT0iQ0hFIi8+CiAgPHR5cGVJZCBleHRlbnNpb249IlBPQ0RfSEQwMDAwNDAiIHJvb3Q9IjIuMTYuODQwLjEuMTEzODgzLjEuMyIvPgogIDx0ZW1wbGF0ZUlkIHJvb3Q9IjIuMTYuNzU2LjUuMzAuMS4xLjEwLjEuOSIvPgogIDx0ZW1wbGF0ZUlkIHJvb3Q9IjIuMTYuODQwLjEuMTEzODgzLjEwLjEyLjIiLz4KICA8dGVtcGxhdGVJZCByb290PSIyLjE2Ljg0MC4xLjExMzg4My4xMC4xMi4xIi8+CiAgPHRlbXBsYXRlSWQgcm9vdD0iMi4xNi43NTYuNS4zMC4xLjEyNy4xLjQiLz4KICA8dGVtcGxhdGVJZCByb290PSIxLjMuNi4xLjQuMS4xOTM3Ni4xLjUuMy4xLjEuMSIvPgogIDx0ZW1wbGF0ZUlkIHJvb3Q9IjEuMy42LjEuNC4xLjE5Mzc2LjEuOS4xLjEuNiIvPgogIDx0ZW1wbGF0ZUlkIHJvb3Q9IjIuMTYuNzU2LjUuMzAuMS4xLjEwLjEuNyIvPgogIDxpZCByb290PSIwNEIwQ0I2Qy1DRDcyLTQ0NzgtQUQxQy00NDdBQjkyMUJDNkIiLz4KICA8Y29kZSBjb2RlPSI3NzYwMy05IiBjb2RlU3lzdGVtPSIyLjE2Ljg0MC4xLjExMzg4My42LjEiIGNvZGVTeXN0ZW1OYW1lPSJMT0lOQyIgZGlzcGxheU5hbWU9Ik1lZGljYXRpb24gdHJlYXRtZW50IHBsYW4uZXh0ZW5kZWQiPgogICAgPHRyYW5zbGF0aW9uIHhzaTp0eXBlPSJDRCIgY29kZT0iNDE5ODkxMDA4IiBjb2RlU3lzdGVtPSIyLjE2Ljg0MC4xLjExMzg4My42Ljk2IiBjb2RlU3lzdGVtTmFtZT0iU05PTUVEIENUIiBkaXNwbGF5TmFtZT0iUmVjb3JkIGFydGlmYWN0IChyZWNvcmQgYXJ0aWZhY3QpIi8+CiAgPC9jb2RlPgogIDx0aXRsZT5NZWRpY2F0aW9uIFRyZWF0bWVudCBQbGFuPC90aXRsZT4KICA8ZWZmZWN0aXZlVGltZSB2YWx1ZT0iMjAyMjA1MTIxMTA0MzYuNzQ4LTA0MDAiLz4KICA8Y29uZmlkZW50aWFsaXR5Q29kZSBjb2RlPSIxNzYyMTAwNSIgY29kZVN5c3RlbT0iMi4xNi44NDAuMS4xMTM4ODMuNi45NiIgY29kZVN5c3RlbU5hbWU9IlNOT01FRCBDVCIgZGlzcGxheU5hbWU9Ik5vcm1hbGx5IGFjY2Vzc2libGUiLz4KICA8bGFuZ3VhZ2VDb2RlIGNvZGU9ImVuLVVTIi8+CiAgPHNldElkIHJvb3Q9IjA0QjBDQjZDLUNENzItNDQ3OC1BRDFDLTQ0N0FCOTIxQkM2QiIvPgogIDx2ZXJzaW9uTnVtYmVyIHZhbHVlPSIxIi8+CiAgPHJlY29yZFRhcmdldD4KICAgIDx0ZW1wbGF0ZUlkIHJvb3Q9IjIuMTYuNzU2LjUuMzAuMS4xLjEwLjIuMSIvPgogICAgPHBhdGllbnRSb2xlPgogICAgICA8aWQgZXh0ZW5zaW9uPSJNQUdNRUQwMDUiIHJvb3Q9IjIuMTYuNzU2LjUuMzAuMS4xOTYuMy4yLjEiLz4KICAgICAgPHBhdGllbnQ+CiAgICAgICAgPG5hbWU+CiAgICAgICAgICA8ZmFtaWx5PkJlaGx1bGktUWF6aW1pPC9mYW1pbHk+CiAgICAgICAgICA8Z2l2ZW4+Q29yaW5hPC9naXZlbj4KICAgICAgICA8L25hbWU+CiAgICAgICAgPGFkbWluaXN0cmF0aXZlR2VuZGVyQ29kZSBjb2RlPSJGIiBjb2RlU3lzdGVtPSIyLjE2Ljg0MC4xLjExMzg4My41LjEiIGNvZGVTeXN0ZW1OYW1lPSJITDcgQWRtaW5pc3RyYXRpdmVHZW5kZXIiIGRpc3BsYXlOYW1lPSJGZW1hbGUiLz4KICAgICAgICA8YmlydGhUaW1lIHZhbHVlPSIyMDAyMTIxMiIvPgogICAgICA8L3BhdGllbnQ+CiAgICA8L3BhdGllbnRSb2xlPgogIDwvcmVjb3JkVGFyZ2V0PgogIDxhdXRob3I+CiAgICA8dGVtcGxhdGVJZCByb290PSIyLjE2Ljc1Ni41LjMwLjEuMS4xMC45LjIzIi8+CiAgICA8dGltZSB2YWx1ZT0iMjAyMjA1MTIxMTA0MzYuNzQ4LTA0MDAiLz4KICAgIDxhc3NpZ25lZEF1dGhvcj4KICAgICAgPGlkIGV4dGVuc2lvbj0iMTIzNDUiIHJvb3Q9IjIuNTEuMS4zIi8+CiAgICAgIDxhc3NpZ25lZFBlcnNvbj4KICAgICAgICA8bmFtZT4KICAgICAgICAgIDxmYW1pbHk+T3JkZXJzPC9mYW1pbHk+CiAgICAgICAgICA8Z2l2ZW4+RG9jdG9yMjQ8L2dpdmVuPgogICAgICAgIDwvbmFtZT4KICAgICAgPC9hc3NpZ25lZFBlcnNvbj4KICAgIDwvYXNzaWduZWRBdXRob3I+CiAgPC9hdXRob3I+CiAgPGN1c3RvZGlhbj4KICAgIDx0ZW1wbGF0ZUlkIHJvb3Q9IjIuMTYuNzU2LjUuMzAuMS4xLjEwLjIuMyIvPgogICAgPGFzc2lnbmVkQ3VzdG9kaWFuPgogICAgICA8cmVwcmVzZW50ZWRDdXN0b2RpYW5Pcmdhbml6YXRpb24+CiAgICAgICAgPGlkIGV4dGVuc2lvbj0iMTIzNDU2Nzg5MCIgcm9vdD0iMi41MS4xLjMiLz4KICAgICAgICA8bmFtZT5GSFY8L25hbWU+CiAgICAgIDwvcmVwcmVzZW50ZWRDdXN0b2RpYW5Pcmdhbml6YXRpb24+CiAgICA8L2Fzc2lnbmVkQ3VzdG9kaWFuPgogIDwvY3VzdG9kaWFuPgogIDxpbmZvcm1hdGlvblJlY2lwaWVudCB0eXBlQ29kZT0iUFJDUCI+CiAgICA8dGVtcGxhdGVJZCByb290PSIyLjE2Ljc1Ni41LjMwLjEuMS4xMC4yLjQiLz4KICAgIDxpbnRlbmRlZFJlY2lwaWVudD4KICAgICAgPGluZm9ybWF0aW9uUmVjaXBpZW50PgogICAgICAgIDxuYW1lPgogICAgICAgICAgPGZhbWlseT5CZWhsdWxpLVFhemltaTwvZmFtaWx5PgogICAgICAgICAgPGdpdmVuPkNvcmluYTwvZ2l2ZW4+CiAgICAgICAgPC9uYW1lPgogICAgICA8L2luZm9ybWF0aW9uUmVjaXBpZW50PgogICAgPC9pbnRlbmRlZFJlY2lwaWVudD4KICA8L2luZm9ybWF0aW9uUmVjaXBpZW50PgogIDxjb21wb25lbnQgY29udGV4dENvbmR1Y3Rpb25JbmQ9InRydWUiPgogICAgPHN0cnVjdHVyZWRCb2R5PgogICAgICA8Y29tcG9uZW50PgogICAgICAgIDxzZWN0aW9uPgogICAgICAgICAgPHRlbXBsYXRlSWQgcm9vdD0iMi4xNi43NTYuNS4zMC4xLjEuMTAuMy4xMyIvPgogICAgICAgICAgPHRlbXBsYXRlSWQgcm9vdD0iMS4zLjYuMS40LjEuMTkzNzYuMS45LjEuMi42Ii8+CiAgICAgICAgICA8aWQgcm9vdD0iMDRCMENCNkMtQ0Q3Mi00NDc4LUFEMUMtNDQ3QUI5MjFCQzZCIi8+CiAgICAgICAgICA8Y29kZSBjb2RlPSI3NzYwNC03IiBjb2RlU3lzdGVtPSIyLjE2Ljg0MC4xLjExMzg4My42LjEiIGNvZGVTeXN0ZW1OYW1lPSJMT0lOQyIgZGlzcGxheU5hbWU9Ik1lZGljYXRpb24gdHJlYXRtZW50IHBsYW4uYnJpZWYiLz4KICAgICAgICAgIDx0aXRsZT5NZWRpY2F0aW9uIFRyZWF0bWVudCBQbGFuPC90aXRsZT4KICAgICAgICAgIDx0ZXh0PgogICAgICAgICAgICA8Y29udGVudCBJRD0icmVmcGRmIj5zZWUgcGRmPC9jb250ZW50PgogICAgICAgICAgPC90ZXh0PgogICAgICAgICAgPGVudHJ5PgogICAgICAgICAgICA8c3Vic3RhbmNlQWRtaW5pc3RyYXRpb24gY2xhc3NDb2RlPSJTQkFETSIgbW9vZENvZGU9IklOVCI+CiAgICAgICAgICAgICAgPHRlbXBsYXRlSWQgcm9vdD0iMi4xNi43NTYuNS4zMC4xLjEuMTAuNC4zNCIvPgogICAgICAgICAgICAgIDx0ZW1wbGF0ZUlkIHJvb3Q9IjEuMy42LjEuNC4xLjE5Mzc2LjEuOS4xLjMuNyIvPgogICAgICAgICAgICAgIDx0ZW1wbGF0ZUlkIHJvb3Q9IjIuMTYuODQwLjEuMTEzODgzLjEwLjIwLjEuMjQiLz4KICAgICAgICAgICAgICA8dGVtcGxhdGVJZCByb290PSIxLjMuNi4xLjQuMS4xOTM3Ni4xLjUuMy4xLjQuNyIvPgogICAgICAgICAgICAgIDx0ZW1wbGF0ZUlkIHJvb3Q9IjEuMy42LjEuNC4xLjE5Mzc2LjEuNS4zLjEuNC43LjEiLz4KICAgICAgICAgICAgICA8aWQgcm9vdD0iNDU2Q0UxMDItNjNEQy00OTQ1LTgyNDQtQTM5MzczNkVCMEEzIi8+CiAgICAgICAgICAgICAgPHRleHQ+CiAgICAgICAgICAgICAgICA8cmVmZXJlbmNlIHZhbHVlPSIjcmVmcGRmIi8+CiAgICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICAgIDxzdGF0dXNDb2RlIGNvZGU9ImNvbXBsZXRlZCIvPgogICAgICAgICAgICAgIDxyZXBlYXROdW1iZXIgbnVsbEZsYXZvcj0iTkkiLz4KICAgICAgICAgICAgICA8Y29uc3VtYWJsZT4KICAgICAgICAgICAgICAgIDxtYW51ZmFjdHVyZWRQcm9kdWN0IGNsYXNzQ29kZT0iTUFOVSI+CiAgICAgICAgICAgICAgICAgIDx0ZW1wbGF0ZUlkIHJvb3Q9IjEuMy42LjEuNC4xLjE5Mzc2LjEuNS4zLjEuNC43LjIiLz4KICAgICAgICAgICAgICAgICAgPHRlbXBsYXRlSWQgcm9vdD0iMi4xNi44NDAuMS4xMTM4ODMuMTAuMjAuMS41MyIvPgogICAgICAgICAgICAgICAgICA8bWFudWZhY3R1cmVkTWF0ZXJpYWwgY2xhc3NDb2RlPSJNTUFUIiBkZXRlcm1pbmVyQ29kZT0iS0lORCI+CiAgICAgICAgICAgICAgICAgICAgPHRlbXBsYXRlSWQgcm9vdD0iMi4xNi43NTYuNS4zMC4xLjEuMTAuNC4zMyIvPgogICAgICAgICAgICAgICAgICAgIDx0ZW1wbGF0ZUlkIHJvb3Q9IjEuMy42LjEuNC4xLjE5Mzc2LjEuOS4xLjMuMSIvPgogICAgICAgICAgICAgICAgICAgIDxjb2RlIGNvZGU9IkdUSU4xMjM0IiBjb2RlU3lzdGVtPSIyLjUxLjEuMSIgY29kZVN5c3RlbU5hbWU9IkdUSU4iIGRpc3BsYXlOYW1lPSJDbG9waWRvZ3JlbCI+CiAgICAgICAgICAgICAgICAgICAgICA8b3JpZ2luYWxUZXh0PgogICAgICAgICAgICAgICAgICAgICAgICA8cmVmZXJlbmNlIHZhbHVlPSIjcmVmcGRmIi8+CiAgICAgICAgICAgICAgICAgICAgICA8L29yaWdpbmFsVGV4dD4KICAgICAgICAgICAgICAgICAgICA8L2NvZGU+CiAgICAgICAgICAgICAgICAgICAgPG5hbWU+Q2xvcGlkb2dyZWw8L25hbWU+CiAgICAgICAgICAgICAgICAgICAgPHBoYXJtOmFzQ29udGVudCBjbGFzc0NvZGU9IkNPTlQiPgogICAgICAgICAgICAgICAgICAgICAgPHBoYXJtOmNvbnRhaW5lclBhY2thZ2VkTWVkaWNpbmUgY2xhc3NDb2RlPSJDT05UIiBkZXRlcm1pbmVyQ29kZT0iSU5TVEFOQ0UiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGhhcm06Y29kZSBjb2RlPSJHVElOMTIzNCIgY29kZVN5c3RlbT0iMi41MS4xLjEiIGNvZGVTeXN0ZW1OYW1lPSJHVElOIiBkaXNwbGF5TmFtZT0iQ2xvcGlkb2dyZWwiLz4KICAgICAgICAgICAgICAgICAgICAgICAgPHBoYXJtOm5hbWU+Q2xvcGlkb2dyZWw8L3BoYXJtOm5hbWU+CiAgICAgICAgICAgICAgICAgICAgICA8L3BoYXJtOmNvbnRhaW5lclBhY2thZ2VkTWVkaWNpbmU+CiAgICAgICAgICAgICAgICAgICAgPC9waGFybTphc0NvbnRlbnQ+CiAgICAgICAgICAgICAgICAgIDwvbWFudWZhY3R1cmVkTWF0ZXJpYWw+CiAgICAgICAgICAgICAgICA8L21hbnVmYWN0dXJlZFByb2R1Y3Q+CiAgICAgICAgICAgICAgPC9jb25zdW1hYmxlPgogICAgICAgICAgICAgIDxlbnRyeVJlbGF0aW9uc2hpcCB0eXBlQ29kZT0iQ09NUCI+CiAgICAgICAgICAgICAgICA8c3Vic3RhbmNlQWRtaW5pc3RyYXRpb24gY2xhc3NDb2RlPSJTQkFETSIgbW9vZENvZGU9IklOVCI+CiAgICAgICAgICAgICAgICAgIDx0ZW1wbGF0ZUlkIHJvb3Q9IjIuMTYuNzU2LjUuMzAuMS4xLjEwLjQuNTIiLz4KICAgICAgICAgICAgICAgICAgPHRleHQ+NzUgbWcgKiBMZSBtYXRpbiAtIFRvdXMgbGVzIGpvdXJzICoKICAgICAgICAgICAgICAgICAgICA8cmVmZXJlbmNlIHZhbHVlPSIjcmVmcGRmIi8+CiAgICAgICAgICAgICAgICAgIDwvdGV4dD4KICAgICAgICAgICAgICAgICAgPGNvbnN1bWFibGU+CiAgICAgICAgICAgICAgICAgICAgPG1hbnVmYWN0dXJlZFByb2R1Y3Q+CiAgICAgICAgICAgICAgICAgICAgICA8bWFudWZhY3R1cmVkTWF0ZXJpYWwgbnVsbEZsYXZvcj0iTkEiLz4KICAgICAgICAgICAgICAgICAgICA8L21hbnVmYWN0dXJlZFByb2R1Y3Q+CiAgICAgICAgICAgICAgICAgIDwvY29uc3VtYWJsZT4KICAgICAgICAgICAgICAgIDwvc3Vic3RhbmNlQWRtaW5pc3RyYXRpb24+CiAgICAgICAgICAgICAgPC9lbnRyeVJlbGF0aW9uc2hpcD4KICAgICAgICAgICAgPC9zdWJzdGFuY2VBZG1pbmlzdHJhdGlvbj4KICAgICAgICAgIDwvZW50cnk+CiAgICAgICAgPC9zZWN0aW9uPgogICAgICA8L2NvbXBvbmVudD4KICAgIDwvc3RydWN0dXJlZEJvZHk+CiAgPC9jb21wb25lbnQ+CjwvQ2xpbmljYWxEb2N1bWVudD4="
+            },
+            "request": {
+                "method": "POST",
+                "url": "Binary"
+            }
+        }
+    ]
+}

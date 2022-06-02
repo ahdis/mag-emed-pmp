@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:pharm="urn:ihe:pharm">
+  <realmCode code="CHE"/>
+  <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+  <templateId root="2.16.756.5.30.1.1.10.1.9"/>
+  <templateId root="2.16.840.1.113883.10.12.2"/>
+  <templateId root="2.16.840.1.113883.10.12.1"/>
+  <templateId root="2.16.756.5.30.1.127.1.4"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+  <templateId root="1.3.6.1.4.1.19376.1.9.1.1.6"/>
+  <templateId root="2.16.756.5.30.1.1.10.1.7"/>
+  <id root="A051BD44-515E-4926-AA32-363ED53E91EC"/>
+  <code code="77603-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medication treatment plan.extended">	
+    <translation xsi:type="CD" code="419891008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Record artifact (record artifact)"/>
+  </code>
+  <title>Therapieentscheid Medikation</title>
+  <effectiveTime value="20220518103047.836-0400"/>
+  <confidentialityCode code="17621005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Normally accessible"/>
+  <languageCode code="de-CH"/>
+  <setId root="A051BD44-515E-4926-AA32-363ED53E91EC"/>
+  <versionNumber value="1"/>
+  <recordTarget>
+    <templateId root="2.16.756.5.30.1.1.10.2.1"/>
+    <patientRole>
+      <id extension="MAGMED005" root="2.16.756.5.30.1.196.3.2.1"/>
+      <patient>
+        <name>
+          <family>Behluli-Qazimi</family>
+          <given>Leandra Corina</given>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="Female"/>
+        <birthTime value="20021221"/>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <templateId root="2.16.756.5.30.1.1.10.9.23"/>
+    <time value="20220518103047.836-0400"/>
+    <assignedAuthor>
+      <id extension="0987654321" root="2.51.1.3"/>
+      <assignedPerson>
+        <name>
+          <family>Orders</family>
+          <given>Doctor24</given>
+        </name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <templateId root="2.16.756.5.30.1.1.10.2.3"/>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id extension="1234567890" root="2.51.1.3"/>
+        <name>FHV</name>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <informationRecipient typeCode="PRCP">
+    <templateId root="2.16.756.5.30.1.1.10.2.4"/>
+    <intendedRecipient>
+      <informationRecipient>
+        <name>
+          <family>Behluli-Qazimi</family>
+          <given>Leandra Corina</given>
+        </name>
+      </informationRecipient>
+    </intendedRecipient>
+  </informationRecipient>
+  <component contextConductionInd="true">
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.756.5.30.1.1.10.3.13"/>
+          <templateId root="1.3.6.1.4.1.19376.1.9.1.2.6"/>
+          <id root="A051BD44-515E-4926-AA32-363ED53E91EC"/>
+          <code code="77604-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medication treatment plan.brief"/>
+          <title>Medication Treatment Plan</title>
+          <text>
+            <content ID="refpdf">see pdf</content>
+          </text>
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="INT">
+              <templateId root="2.16.756.5.30.1.1.10.4.34"/>
+              <templateId root="1.3.6.1.4.1.19376.1.9.1.3.7"/>
+              <templateId root="2.16.840.1.113883.10.20.1.24"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+              <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.1"/>
+              <id root="2E80175D-1BF3-4762-B95C-C4BD5FD5643F"/>
+              <text>
+                <reference value="#refpdf"/>
+              </text>
+              <statusCode code="completed"/>
+              <repeatNumber nullFlavor="NI"/>
+              <consumable>
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                  <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                    <templateId root="2.16.756.5.30.1.1.10.4.33"/>
+                    <templateId root="1.3.6.1.4.1.19376.1.9.1.3.1"/>
+                    <code code="GTIN1234" codeSystem="2.51.1.1" codeSystemName="GTIN" displayName="Amiodarone HCl">
+                      <originalText>
+                        <reference value="#refpdf"/>
+                      </originalText>
+                    </code>
+                    <name>Amiodarone HCl</name>
+                    <pharm:asContent classCode="CONT">
+                      <pharm:containerPackagedMedicine classCode="CONT" determinerCode="INSTANCE">
+                        <pharm:code code="GTIN1234" codeSystem="2.51.1.1" codeSystemName="GTIN" displayName="Amiodarone HCl"/>
+                        <pharm:name>Amiodarone HCl</pharm:name>
+                      </pharm:containerPackagedMedicine>
+                    </pharm:asContent>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="COMP">
+                <substanceAdministration classCode="SBADM" moodCode="INT">
+                  <templateId root="2.16.756.5.30.1.1.10.4.52"/>
+                  <text>200 mg * à définir - Tous les jours *
+                    <reference value="#refpdf"/>
+                  </text>
+                  <consumable>
+                    <manufacturedProduct>
+                      <manufacturedMaterial nullFlavor="NA"/>
+                    </manufacturedProduct>
+                  </consumable>
+                </substanceAdministration>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
