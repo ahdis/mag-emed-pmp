@@ -12,6 +12,17 @@ https://test.ahdis.ch/matchbox/fhir for FHIR Server in https://test.ahdis.ch/mat
 | Romuald René Guy  | MUELLER-PATTI         | male    |1993-09-2  | 761337614574943741                    |    50987ab8-3344-4349-8aaa-cc3bc9d9dec8               |  MAGMED007 | chuv - no appc doc |
 | Loris Bertrand  | PALOLA        |   male   | 1995-05-23  | 761337617206922169                    |  68e0258d-20c6-4f6c-8740-00e9e0f0d29f                 |  MAGMED010 | documedis - patient  |
 | Trong San  | NEFF-WINGEIER        |      |   | 761337611735842172                    | e7963774-9098-445f-9cab-5d52234b52c3   |  MAGMED011 | documedis - patient |
+| BRUNO KAKOB| Aegerter-Bischoff | | 23.11.1983 | 64370848-bed5-46c4-972f-05b410b59235 | 761337613917063504 | CHUV001 | 
+| NABIHA| KRAFT-BRUHIN | | 22.06.1980 | a42cb8ee-dc76-428d-be0f-163b38e5d511 | 761337612537863969 | CHUV002 | 
+ | TOLOMEY JOHN| Monney-Margueron | | 01.04.1978 | 1abb1e0f-86e1-4a9e-8ae4-94f532cec483 | 761337617150124497 | CHUV003 | 
+ | SALOME ANJA| Klemenz | | 15.09.1988 | eebf95b0-d408-44e9-b1be-6a941ea65325 | 761337619872617110 | CHUV004 | 
+ | FU-HUI| MURATORE-SCHIAVONE | | 14.06.1972 | b199886e-982f-41a2-b79d-c7fe58c25266 | 761337610975948651 | CHUV005 | 
+ | Filippa Aurelia| STEINER-BAECHLER | | 18.02.1990 | c1d1b2f0-377d-4eb4-918a-4632e4c95c7c | 761337616538595232 | CHUV006 | 
+ | SAFIRA| SEGMUELLER | | 05.09.1969 | 02add961-9bcf-4ebe-82f1-2f2eeabddc41 | 761337614430418338 | CHUV007 | 
+ | Urs Syed | ACIOLI PEREIRA | | 12.06.2005 | 46d8e9d7-3a7f-4ab1-b5ee-2f87175a6490 | 761337610360664012 | CHUV008 | 
+ | YANEK SOLAR| WEBER-LEDERGERBER | | 29.05.1991 | 22701467-5f85-4818-8cd5-202d86c4decc | 761337612107906324 | CHUV009 | 
+ | SIMONE KEREN | Stauffacher | | 12.05.1973 | 23f31e1b-c483-4f87-8996-9413415552a1 | 761337614443482272 | CHUV010 | 
+
 
 1. Patient has to be setup in CARA, patient should be visible via PDQm Queries, e.g:
 
@@ -24,6 +35,8 @@ https://test.ahdis.ch/matchbox/fhir for FHIR Server in https://test.ahdis.ch/mat
   - on opening box add local PID system in sourceIdentifier.system and PID value in sourceIdentifier.value
   - select PIXm Feed add Identifier 
   - if you the patient is registered, you should be able to query it in the MAG Mobile Access Gateway - Patient Identifiers, enter the local id MAGMED005 and you should get via the PIXm Query back the MPI-ID, the EPR-SPID and the targetID
+
+
 
 
 2. Setup for CARA PMP
