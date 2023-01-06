@@ -1,7 +1,16 @@
 # Mobile Access Gateway for PMP
 
 Test/demo cases for using the Mobile Access Gateway with the eMedication Service of CARA.
-Test patients are currently setup fixed and described [here](mag-emed/testsetupcara.md)
+Test patients are currently setup fixed and described [here](mag-emed/testsetupcara.md).
+
+The test instance is available at https://test.ahdis.ch/mag-pmp2/fhir/
+
+There is a GUI which allows to you execute the different functionality directly:
+https://test.ahdis.ch/mag-pmp2/#/mag
+
+Verify that you have in settings the correct endpoint, could be the old one because it is 
+stored in the browser session: https://test.ahdis.ch/mag-pmp2/#/settings).
+
 
 ## Getting the Current Medication List of a Patient
 
