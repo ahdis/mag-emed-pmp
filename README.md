@@ -99,16 +99,6 @@ Accept: application/fhir+json
 Authorization: Bearer PHNh.....
 ```
 
-### 5. Convert CDA to FHIR
-
-FHIR API $transform Operation
-
-```
-POST https://test.ahdis.ch/matchbox/fhir/StructureMap/$transform?source=http://fhir.ch/ig/cda-fhir-maps/StructureMap/CdaChEmedMedicationListDocumentToBundle
-Accept: application/fhir+json;fhirVersion=4.0;charset=UTF-8
-Content-Type: text/xml;charset=UTF-8
-```
-
 ## Updating the medication
 
 
@@ -117,7 +107,7 @@ Content-Type: text/xml;charset=UTF-8
 IHE PIXm Query [ITI-83] (https Query)
 
 ```
-https://test.ahdis.ch/mag-pmp/fhir/fhir/Patient/$ihe-pix?sourceIdentifier=urn:oid:1.3.6.1.4.1.21367.2017.2.5.83|MAGMED001&targetSystem=urn:oid:2.999.756.42.21&targetSystem=urn:oid:2.16.756.5.30.1.127.3.10.3 HTTP/1.1
+https://test.ahdis.ch/mag-pmp2/fhir/fhir/Patient/$ihe-pix?sourceIdentifier=urn:oid:1.3.6.1.4.1.21367.2017.2.5.83|MAGMED001&targetSystem=urn:oid:2.999.756.42.21&targetSystem=urn:oid:2.16.756.5.30.1.127.3.10.3 HTTP/1.1
 Accept: application/fhir+json;charset=UTF-8
 Content-Type: application/fhir+json;charset=UTF-8
 ```
@@ -137,7 +127,7 @@ returns identifiers for EPR-SPID (2.16.756.5.30.1.127.3.10.3) and MPI-ID (2.999.
     {
       "name": "targetId",
       "valueReference": {
-        "reference": "http://test.ahdis.ch/mag-pmp/fhir/Patient/2.999.756.42.2-CARAMED001"
+        "reference": "http://test.ahdis.ch/mag-pmp2/fhir/Patient/2.999.756.42.2-CARAMED001"
       }
     },
     {
@@ -156,7 +146,7 @@ returns identifiers for EPR-SPID (2.16.756.5.30.1.127.3.10.3) and MPI-ID (2.999.
 Get Assertion based on IdP SAML token, here SAML token is abbreviated for testing, Patient (resourceId as EPR-SPID), Role (NORM) and PurposeOfUse (HCP) for Health Professional who is identified with GLN 7601002469191
 
 ```
-POST https://test.ahdis.ch/mag-pmp/camel/assertion HTTP/1.1
+POST https://test.ahdis.ch/mag-pmp2/camel/assertion HTTP/1.1
 Scope: resourceId/761337610445502987 purposeOfUse/NORM role/HCP
 Accept: application/json;charset=UTF-8
 Content-Type: application/xml;charset=UTF-8
@@ -183,7 +173,7 @@ returns XUA Authorization Assertion for the specified scope:
 ```
 
 
-### 4. Publish CH EMED FHIR document with IHE MHD Provide Document Bundle transaction
+### 3. Publish CH EMED FHIR document with IHE MHD Provide Document Bundle transaction
 
 The document has to be submitted according to the IHE MHD Provide Document Bundle [ITI-65](http://fhir.ch/ig/ch-epr-mhealth/iti-65.html) transaction with the following special considerations for each of the resource elements within the Bundle. As a Document Source you need to provide different identifiers:
 
