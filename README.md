@@ -58,7 +58,8 @@ Get Assertion based on IdP SAML token, here SAML token is abbreviated for testin
 
 ```
 POST https://test.ahdis.ch/mag-pmp2/camel/assertion HTTP/1.1
-Scope: resourceId/761337610445502987 purposeOfUse/NORM role/HCP
+Scope: person_id=761337610445502987^^^&2.16.756.5.30.1.127.3.10.3&ISO purpose_of_use=urn:oid:2.16.756.5.30.1.127.3.10.5|NORM subject_role=urn:oid:2.16.756.5.30.1.127.3.10.6|HCP
+
 Accept: application/json;charset=UTF-8
 Content-Type: application/xml;charset=UTF-8
 
