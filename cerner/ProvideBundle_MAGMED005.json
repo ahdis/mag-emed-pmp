@@ -66,7 +66,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "https://test.ahdis.ch/mag-pmp/fhir/Patient/7a4ec59f-a024-4cfb-bc04-3339c53cb9ac"
+                    "reference": "https://test.ahdis.ch/mag-pmp-int/fhir/Patient/7a4ec59f-a024-4cfb-bc04-3339c53cb9ac"
                 },
                 "date": "2022-05-12T11:04:36-04:00",
                 "entry": [
@@ -151,7 +151,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "https://test.ahdis.ch/mag-pmp/fhir/Patient/7a4ec59f-a024-4cfb-bc04-3339c53cb9ac"
+                    "reference": "https://test.ahdis.ch/mag-pmp-int/fhir/Patient/7a4ec59f-a024-4cfb-bc04-3339c53cb9ac"
                 },
                 "date": "2022-05-12T11:04:36.748-04:00",
                 "description": "Medication Treatment Plan",

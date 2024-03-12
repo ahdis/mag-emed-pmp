@@ -7,7 +7,7 @@ APPPC Doucment
     {
       "response": {
         "status": "201 Created",
-        "location": "http://test.ahdis.ch/mag-pmp/camel/xdsretrieve?uniqueId=urn:uuid:e0426393-7969-49b5-bc05-ecf4e85048fb&repositoryUniqueId=2.999.756.42.1",
+        "location": "http://test.ahdis.ch/mag-pmp-int/camel/xdsretrieve?uniqueId=urn:uuid:e0426393-7969-49b5-bc05-ecf4e85048fb&repositoryUniqueId=2.999.756.42.1",
         "lastModified": "2022-01-20T13:05:28.141+01:00"
       }
     },

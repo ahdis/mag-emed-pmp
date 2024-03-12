@@ -2,7 +2,7 @@
 Testsetup Cara for PMP
 ======================
 
-You can access all data via https://test.ahdis.ch/matchbox/#/mag, you need to configure https://test.ahdis.ch/mag-pmp/fhir for the Mobile Access Gateway and
+You can access all data via https://test.ahdis.ch/matchbox/#/mag, you need to configure https://test.ahdis.ch/mag-pmp-int/fhir for the Mobile Access Gateway and
 https://test.ahdis.ch/matchbox/fhir for FHIR Server in https://test.ahdis.ch/matchbox/#/settings. Settings are stored in browser for the next tim.
 
 | First Name |  Last name  | Gender  | DOB     | EPR-SPID (2.16.756.5.30.1.127.3.10.3) | MPI-PID (2.16.756.5.30.1.191.1.0.2.1)  | CHUV (2.16.756.5.30.1.196.3.2.1) | usage |
@@ -37,7 +37,7 @@ https://test.ahdis.ch/matchbox/fhir for FHIR Server in https://test.ahdis.ch/mat
 
 1. Patient has to be setup in CARA, patient should be visible via PDQm Queries, e.g:
 
-  - you need to set also https://test.ahdis.ch/mag-pmp/fhir in settings for FHIR Server
+  - you need to set also https://test.ahdis.ch/mag-pmp_int/fhir in settings for FHIR Server
   - you need to register your local id for your organization (e.g. MAGMED005)
     seaarch patient with pdq https://test.ahdis.ch/matchbox/#/patients (for this 
   - then you can get the EPRS-PID (2.16.756.5.30.1.127.3.10.3) and MPI-PID (2.16.756.5.30.1.191.1.0.2.1)
@@ -59,7 +59,7 @@ https://test.ahdis.ch/matchbox/fhir for FHIR Server in https://test.ahdis.ch/mat
 - If you click on Query Medication List you should get one entry
 
 ### trouble shooting
-if there are any pmp problems check also https://sct-form.hcuge.ach/sharedtreatmentplan/mhd/logs currently: https://pmp.posttenebrassilico.ch/pmp/mhd/logs
+if there are any pmp problems check also: https://ws-pmp-int.cara.ch/pmp2/mhd/logs
 if logs are reverted: https://www.browserling.com/tools/text-reverse
 
 ### HP setup

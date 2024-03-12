@@ -3,13 +3,20 @@
 Test/demo cases for using the Mobile Access Gateway with the eMedication Service of CARA.
 Test patients are currently setup fixed and described [here](mag-emed/testsetupcara.md).
 
-The test instance is available at https://test.ahdis.ch/mag-pmp2/fhir/
+## Instances
+
+Two instances of the MAG are available, corresponding to the two PMP instances:
+
+| MAG Instance                            | PMP Instance                     |
+|-----------------------------------------|----------------------------------|
+| https://test.ahdis.ch/mag-pmp-int/fhir/ | https://ws-pmp-int.cara.ch/pmp2/ |
+| https://test.ahdis.ch/mag-pmp-dev/fhir/ | https://ws-pmp-dev.cara.ch/pmp/  |
 
 There is a GUI which allows to you execute the different functionality directly:
-https://test.ahdis.ch/mag-pmp2/#/mag
+https://test.ahdis.ch/mag-pmp-int/#/mag
 
 Verify that you have in settings the correct endpoint, could be the old one because it is 
-stored in the browser session: https://test.ahdis.ch/mag-pmp2/#/settings).
+stored in the browser session: https://test.ahdis.ch/mag-pmp-int/#/settings).
 
 
 ## Getting the Current Medication List of a Patient
@@ -19,7 +26,7 @@ stored in the browser session: https://test.ahdis.ch/mag-pmp2/#/settings).
 IHE PIXm Query [ITI-83] (https Query)
 
 ```
-https://test.ahdis.ch/mag-pmp2/fhir/fhir/Patient/$ihe-pix?sourceIdentifier=urn:oid:1.3.6.1.4.1.21367.2017.2.5.83|MAGMED001&targetSystem=urn:oid:2.999.756.42.21&targetSystem=urn:oid:2.16.756.5.30.1.127.3.10.3 HTTP/1.1
+https://test.ahdis.ch/mag-pmp-int/fhir/Patient/$ihe-pix?sourceIdentifier=urn:oid:1.3.6.1.4.1.21367.2017.2.5.83|MAGMED001&targetSystem=urn:oid:2.999.756.42.21&targetSystem=urn:oid:2.16.756.5.30.1.127.3.10.3 HTTP/1.1
 Accept: application/fhir+json
 ```
 returns identifiers for EPR-SPID (2.16.756.5.30.1.127.3.10.3) and MPI-ID (2.999.756.42.2)
@@ -38,7 +45,7 @@ returns identifiers for EPR-SPID (2.16.756.5.30.1.127.3.10.3) and MPI-ID (2.999.
     {
       "name": "targetId",
       "valueReference": {
-        "reference": "http://test.ahdis.ch/mag-pmp2/fhir/Patient/2.999.756.42.2-CARAMED001"
+        "reference": "http://test.ahdis.ch/mag-pmp-int/fhir/Patient/2.999.756.42.2-CARAMED001"
       }
     },
     {
@@ -57,7 +64,7 @@ returns identifiers for EPR-SPID (2.16.756.5.30.1.127.3.10.3) and MPI-ID (2.999.
 Get Assertion based on IdP SAML token, here SAML token is abbreviated for testing, Patient (resourceId as EPR-SPID), Role (NORM) and PurposeOfUse (HCP) for Health Professional who is identified with GLN 7601002469191
 
 ```
-POST https://test.ahdis.ch/mag-pmp2/camel/assertion HTTP/1.1
+POST https://test.ahdis.ch/mag-pmp-int/camel/assertion HTTP/1.1
 Scope: person_id=761337610445502987^^^&2.16.756.5.30.1.127.3.10.3&ISO purpose_of_use=urn:oid:2.16.756.5.30.1.127.3.10.5|NORM subject_role=urn:oid:2.16.756.5.30.1.127.3.10.6|HCP
 
 Accept: application/json;charset=UTF-8
@@ -87,14 +94,14 @@ returns XUA Authorization Assertion for the specified scope:
 ### 3. Query Medication List or Medication Card with the $find-medication-list operation 
 
 ```
-https://test.ahdis.ch/mag-pmp2/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.16.756.5.30.1.191.1.0.2.1|c55f4ca7-bd4e-4134-8dcd-56b793ade958
+https://test.ahdis.ch/mag-pmp-int/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.16.756.5.30.1.191.1.0.2.1|c55f4ca7-bd4e-4134-8dcd-56b793ade958
 Accept: application/fhir+json
 Authorization: Bearer PHNh.....
 ```
 if you wan to query the Medication Card instead of the Medication List you need to add the format parameter
 
 ```
-https://test.ahdis.ch/mag-pmp2/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.16.756.5.30.1.191.1.0.2.1|c55f4ca7-bd4e-4134-8dcd-56b793ade958&format=urn:oid:2.16.756.5.30.1.127.3.10.10|urn:che:epr:ch-emed:medication-card:2022
+https://test.ahdis.ch/mag-pmp-int/fhir/DocumentReference/$find-medication-list?status=current&patient.identifier=urn:oid:2.16.756.5.30.1.191.1.0.2.1|c55f4ca7-bd4e-4134-8dcd-56b793ade958&format=urn:oid:2.16.756.5.30.1.127.3.10.10|urn:che:epr:ch-emed:medication-card:2022
 Accept: application/fhir+json
 Authorization: Bearer PHNh.....
 ```
@@ -104,7 +111,7 @@ Authorization: Bearer PHNh.....
 IHE MHD 68 Document retrieve with url received from above request
 
 ```
-https://test.ahdis.ch/mag-pmp2/fhir/camel/xdsretrieve?uniqueId=51570022-9b6a-474b-927b-e6a1b193ce16&repositoryUniqueId=2.999.756.42.1
+https://test.ahdis.ch/mag-pmp-int/fhir/camel/xdsretrieve?uniqueId=51570022-9b6a-474b-927b-e6a1b193ce16&repositoryUniqueId=2.999.756.42.1
 Accept: application/fhir+json
 Authorization: Bearer PHNh.....
 ```
@@ -117,7 +124,7 @@ Authorization: Bearer PHNh.....
 IHE PIXm Query [ITI-83] (https Query)
 
 ```
-https://test.ahdis.ch/mag-pmp2/fhir/fhir/Patient/$ihe-pix?sourceIdentifier=urn:oid:1.3.6.1.4.1.21367.2017.2.5.83|MAGMED001&targetSystem=urn:oid:2.999.756.42.21&targetSystem=urn:oid:2.16.756.5.30.1.127.3.10.3 HTTP/1.1
+https://test.ahdis.ch/mag-pmp-int/fhir/Patient/$ihe-pix?sourceIdentifier=urn:oid:1.3.6.1.4.1.21367.2017.2.5.83|MAGMED001&targetSystem=urn:oid:2.999.756.42.21&targetSystem=urn:oid:2.16.756.5.30.1.127.3.10.3 HTTP/1.1
 Accept: application/fhir+json;charset=UTF-8
 Content-Type: application/fhir+json;charset=UTF-8
 ```
@@ -137,7 +144,7 @@ returns identifiers for EPR-SPID (2.16.756.5.30.1.127.3.10.3) and MPI-ID (2.999.
     {
       "name": "targetId",
       "valueReference": {
-        "reference": "http://test.ahdis.ch/mag-pmp2/fhir/Patient/2.999.756.42.2-CARAMED001"
+        "reference": "http://test.ahdis.ch/mag-pmp-int/fhir/Patient/2.999.756.42.2-CARAMED001"
       }
     },
     {
@@ -156,7 +163,7 @@ returns identifiers for EPR-SPID (2.16.756.5.30.1.127.3.10.3) and MPI-ID (2.999.
 Get Assertion based on IdP SAML token, here SAML token is abbreviated for testing, Patient (resourceId as EPR-SPID), Role (NORM) and PurposeOfUse (HCP) for Health Professional who is identified with GLN 7601002469191
 
 ```
-POST https://test.ahdis.ch/mag-pmp2/camel/assertion HTTP/1.1
+POST https://test.ahdis.ch/mag-pmp-int/camel/assertion HTTP/1.1
 Scope: resourceId/761337610445502987 purposeOfUse/NORM role/HCP
 Accept: application/json;charset=UTF-8
 Content-Type: application/xml;charset=UTF-8
@@ -220,7 +227,7 @@ See [mtp-submit.json](pmp-pharm/mtp-submit.json) for a Provide Document Bundle m
 The Provide Document Bundle message is sent to the base URL as defined in FHIR. See http://hl7.org/fhir/R4/http.html for the definition of “HTTP” access methods and “base”.
 
 ```
-POST https://test.ahdis.ch/mag-pmp2/fhir/
+POST https://test.ahdis.ch/mag-pmp-int/fhir/
 Accept: application/fhir+json;charset=UTF-8
 Content-Type: application/fhir+json;charset=UTF-8
 Authorization: Bearer PHN...
@@ -232,7 +239,7 @@ The server returns a HTTP Status code appropriate to the processing outcome, con
 
 ### Logs
 
-You can access any logs also directly at https://pmp.posttenebrassilico.ch/pmp2/mhd/logs.
+You can access any logs also directly at https://ws-pmp-int.cara.ch/pmp2/mhd/logs.
 
 ### Copy cubernetes log from testinstance
 

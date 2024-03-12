@@ -64,12 +64,12 @@ nfxnPmpq4BMtbF4BGwTFRHpfb0ZbBZBs3agToMPSekkqcJ5/</ds:X509Certificate>
     <saml2:Subject>
         <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:persistent">HIN_1e2cc4265fa4370d9f172705893d819c650ad113d05a9c124070a8e85cf5b918</saml2:NameID>
         <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
-            <saml2:SubjectConfirmationData InResponseTo="a4g502c6aceh414j3bdi398a62i7c1g" NotOnOrAfter="2022-03-18T10:48:28.187Z" Recipient="https://test.ahdis.ch/mag-pmp/saml/SSO"/>
+            <saml2:SubjectConfirmationData InResponseTo="a4g502c6aceh414j3bdi398a62i7c1g" NotOnOrAfter="2022-03-18T10:48:28.187Z" Recipient="https://test.ahdis.ch/mag-pmp-int/saml/SSO"/>
         </saml2:SubjectConfirmation>
     </saml2:Subject>
     <saml2:Conditions NotBefore="2022-03-18T08:48:28.187Z" NotOnOrAfter="2022-03-18T08:53:28.187Z">
         <saml2:AudienceRestriction>
-            <saml2:Audience>https://test.ahdis.ch/mag-pmp/saml/SSO</saml2:Audience>
+            <saml2:Audience>https://test.ahdis.ch/mag-pmp-int/saml/SSO</saml2:Audience>
         </saml2:AudienceRestriction>
     </saml2:Conditions>
     <saml2:AuthnStatement AuthnInstant="2022-03-18T08:48:28.187Z" SessionNotOnOrAfter="2022-03-18T10:48:28.187Z">
